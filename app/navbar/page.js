@@ -46,7 +46,7 @@ const Navbar = () => {
   
     return (
       <>
-          <div className="flex justify-between shadow-nav items-center p-2 bg-transparent sticky top-0 z-50 backdrop-blur-sm" style={{backgroundColor: 'rgba(255, 191, 219, 0.4)'}}>
+          <div className="flex justify-between shadow-nav w-full items-center p-2 bg-transparent sticky top-0 z-50 backdrop-blur-sm" style={{backgroundColor: 'rgba(255, 191, 219, 0.4)'}}>
               <div className="block text-green-900 text-2xl px-4 lg:ml-32">
                 <Link className={`mx-5 ${bebas_neue.className}`} href={"/"}>sepsupriatn<span className="text-orange-400">aa</span></Link>
               </div>

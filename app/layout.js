@@ -12,7 +12,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="scroll-smooth bg-slate-200">
+    <html lang="en" className="scroll-smooth bg-slate-200 w-full">
       <body className={`${inter.className} overflow-x-hidden`}>
         <Navbar />
           <div>{children}</div>

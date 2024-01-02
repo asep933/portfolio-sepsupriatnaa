@@ -15,7 +15,7 @@ const About = () => {
     Dengan keahlian teknis dan pengalaman praktis, Asep Supriatna siap untuk menjalankan proyek pengembangan web dengan fokus pada kualitas dan solusi yang efisien. Jangan ragu untuk menghubungi melalui email untuk diskusi lebih lanjut atau proyek potensial.`;
 
     return (
-        <div className="h-screen bg-slate-200 p-5 space-y-10">
+        <div className="h-screen bg-slate-200 w-full p-5 space-y-10">
             <div className='flex items-center flex-wrap lg:flex lg:flex-nowrap'>
                 <h1 className="text-2xl font-semibold bg-orange-200 p-2 transform -rotate-2
                 hover:rotate-0 mt-8 lg:mt-24 lg:mr-20 lg:text-4xl lg:ml-20">About</h1>
