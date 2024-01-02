@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className="scroll-smooth bg-slate-200 w-full">
       <body className={`${inter.className} overflow-x-hidden`}>
         <Navbar />
-          <div>{children}</div>
+          <div className='w-full'>{children}</div>
         <Footer/>
       </body>
     </html>
