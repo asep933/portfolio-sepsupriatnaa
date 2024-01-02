@@ -52,7 +52,7 @@ const Page = () => {
                             JS, React dan Next.
                         </p><br />
 
-                        <a href="#pageDua" className="bg-orange-200 shadow-lg hover:bg-orange-300 p-1">Learn More</a>
+                        <a href="#pageDua" className="bg-orange-200 shadow-sm hover:bg-orange-300 p-1">Learn More</a>
                     </div>
                 </div>
             {/* hero section end */}
