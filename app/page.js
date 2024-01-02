@@ -123,7 +123,7 @@ const Page = () => {
             <Line />
 
             {/* contact start */}
-                <div className="bg-slate-200 pt-16 pb-32 w-full flex justify-center items-center flex-col space-y-20">
+                <div className="bg-slate-200 pt-16 pb-32 px-4 w-full flex justify-center items-center flex-col space-y-20">
                     <h1 className="text-lg font-semibold bg-orange-200 p-2 transform -rotate-2 hover:rotate-0">Social Media</h1>
 
                     <div className="space-x-10">
