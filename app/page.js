@@ -32,7 +32,7 @@ const Form = () => {
 // komponen Hr
 const Line = () => {
     return (
-        <div className="p-[0.3px] w-full bg-slate-500"></div>
+        <div className="p-[0.3px] w-full bg-slate-400"></div>
     )
 }
 
@@ -72,15 +72,17 @@ const Page = () => {
                 </div>
             {/* service section end */}
 
+            <Line />
+
             {/* portfolio section start*/}
-                <div className="bg-white flex flex-wrap items-center w-full pb-16 pt-32 text-base lg:px-32 font-semibold">
+                <div className="bg-white flex flex-wrap items-center w-full pb-16 pt-16 text-base lg:px-32 font-semibold">
                     <div className="w-full px-5">
                         <h1 className="text-2xl font-bold mb-8">My Collection</h1>
 
-                        <p className="mb-6">berikut adalah daftar foto yang di ganerate menggunakan Stable Diffusion</p>
+                        <p className="mb-6 font-normal">berikut adalah daftar foto yang di ganerate menggunakan Stable Diffusion</p>
 
-                        <div className="flex flex-wrap px-16 mt-16">
-                            <div className="bg-orange-200 mt-8 w-full text-base lg:text-lg space-y-2 p-16 rounded-lg shadow-lg lg:w-2/4 lg:scale-75">
+                        <div className="flex flex-wrap px-5 mt-16">
+                            <div className="bg-orange-200 mt-8 w-full text-base lg:text-lg space-y-2 p-5 rounded-lg shadow-lg lg:w-2/4 lg:scale-75">
                                 <Image 
                                     src={imageSatu}
                                     width={200}
@@ -89,7 +91,7 @@ const Page = () => {
 
                                 <p>A graceful woman is one who carries herself with poise and elegance.</p>
                             </div>
-                            <div className="bg-orange-200 mt-8 w-full text-base lg:text-lg space-y-2 p-16 rounded-lg shadow-lg lg:w-2/4 lg:scale-75">
+                            <div className="bg-orange-200 mt-8 w-full text-base lg:text-lg space-y-2 p-5 rounded-lg shadow-lg lg:w-2/4 lg:scale-75">
                                 <Image 
                                     src={imageEmpat}
                                     width={200}
@@ -98,7 +100,7 @@ const Page = () => {
 
                                 <p>A woman with piercing blue eyes elegantly holds an umbrella, a vision of grace in the rain.</p>
                             </div>
-                            <div className="bg-orange-200 mt-8 w-full text-base lg:text-lg space-y-2 p-16 rounded-lg shadow-lg lg:w-2/4 lg:scale-75">
+                            <div className="bg-orange-200 mt-8 w-full text-base lg:text-lg space-y-2 p-5 rounded-lg shadow-lg lg:w-2/4 lg:scale-75">
                                 <Image 
                                     src={imageLima}
                                     width={200}
@@ -115,21 +117,19 @@ const Page = () => {
             {/* portfolio section end */}
 
             {/* feedback start */}
-                <div className="bg-slate-200 pt-16 pb-32 w-full flex justify-center items-center flex-col space-y-20">
+                <div className="bg-slate-200 pt-16 pb-32 w-full flex justify-center items-center flex-col">
                     <Form />
                 </div>
             {/* feedback end */}
 
-            <Line />
-
             {/* contact start */}
-                <div className="bg-slate-200 pt-16 pb-32 px-4 w-full flex justify-center items-center flex-col space-y-20">
-                    <h1 className="text-lg font-semibold bg-orange-200 px-4 p-2 transform -rotate-2 hover:rotate-0">Social Media</h1>
+                <div className="bg-white pt-16 pb-32 px-4 w-full flex justify-center items-center flex-col">
+                    <h1 className="text-lg font-semibold bg-orange-200 p-2 transform -rotate-2 hover:rotate-0 mb-20">Social Media</h1>
 
                     <div className="px-4 block">
-                        <a href="mailto:asep93339@gmail.com" className="bg-slate-100 p-4 m-5 lg:m-10 hover:bg-slate-300">Email</a>
-                        <a href="https://www.instagram.com/sepsupriatnaa/" target="_blank" className="bg-slate-100 lg:m-10 p-4 m-5 hover:bg-slate-300">Instagram</a>
-                        <a href="https://wa.me/6285872256552"target="_blank" className="bg-slate-100 p-4 m-5 lg:m-10 hover:bg-slate-300">WhatsApp</a>
+                        <a href="mailto:asep93339@gmail.com" className="bg-slate-200 p-4 m-5 lg:m-10 hover:bg-slate-300">Email</a>
+                        <a href="https://www.instagram.com/sepsupriatnaa/" target="_blank" className="bg-slate-200 lg:m-10 p-4 m-5 hover:bg-slate-300">Instagram</a>
+                        <a href="https://wa.me/6285872256552"target="_blank" className="bg-slate-200 p-4 m-5 lg:m-10 hover:bg-slate-300">WhatsApp</a>
                     </div>
                 </div>
             {/* contact end */}
