@@ -48,7 +48,7 @@ const Page = () => {
 
                         <p className="text-orange-500 text-sm">INTRODUCTION</p>
 
-                        <p>saya Asep Supriatna seorang programmer dengan pengalaman 2 tahun, <br /> keahlian saya diantaranya HTML, css,
+                        <p>saya Asep Supriatna seorang programmer dengan pengalaman 2 tahun, <br /> keahlian saya diantaranya HTML, CSS,
                             JS, React dan Next.
                         </p><br />
 
