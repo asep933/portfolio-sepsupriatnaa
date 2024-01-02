@@ -126,7 +126,7 @@ const Page = () => {
                 <div className="bg-slate-200 pt-16 pb-32 px-4 w-full flex justify-center items-center flex-col space-y-20">
                     <h1 className="text-lg font-semibold bg-orange-200 px-4 p-2 transform -rotate-2 hover:rotate-0">Social Media</h1>
 
-                    <div className="space-x-10 px-4">
+                    <div className="space-x-10 mx-4">
                         <a href="mailto:asep93339@gmail.com" className="bg-slate-100 p-4 hover:bg-slate-300">Email</a>
                         <a href="https://www.instagram.com/sepsupriatnaa/" target="_blank" className="bg-slate-100 p-4 hover:bg-slate-300">Instagram</a>
                         <a href="https://wa.me/6285872256552"target="_blank" className="bg-slate-100 p-4 hover:bg-slate-300">WhatsApp</a>
