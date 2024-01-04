@@ -13,7 +13,7 @@ const Form = () => {
             <div className="flex items-center flex-col min-w-full">
                 <h1 className="text-2xl font-bold mb-8">Contact Me</h1>
 
-                <form className="flex flex-wrap flex-col mt-0 w-full px-4 text-base lg:translate-x-80 font-semibold">
+                <form className="flex flex-wrap flex-col mt-0 w-full px-5 text-base lg:translate-x-80 font-semibold">
                     <label htmlFor="nama">Nama</label>
                     <input name="nama" placeholder="nama.." className="mb-3 mt-1 rounded-sm p-2 font-normal shadow-sm w-full lg:w-2/4 focus:outline-orange-300" />
 
@@ -42,7 +42,7 @@ const Page = () => {
             {/* hero section start */}
                 <div id="home" className="bg-slate-200 flex h-full w-full lg:h-screen">
                     <div className="block w-full space-y-3 px-5 mt-16 mb-32 text-base lg:px-32 lg:scale-125 lg:mt-40 lg:ml-40">
-                        <p>Hallo, 😃...</p>
+                        <p>Hallo👋...</p>
 
                         <h1 className="text-2xl font-bold">Frontend <span className="bg-orange-200 transform rotate-3">Web</span></h1>
 
