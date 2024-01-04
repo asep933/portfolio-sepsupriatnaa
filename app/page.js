@@ -14,15 +14,15 @@ const Form = () => {
                 <h1 className="text-2xl font-bold mb-8">Contact Me</h1>
 
                 <form className="flex flex-wrap flex-col mt-0 w-full px-5 text-base lg:translate-x-80 font-semibold">
-                    <label htmlFor="nama">Nama</label>
-                    <input name="nama" placeholder="nama.." className="mb-3 mt-1 rounded-sm p-2 font-normal shadow-sm w-full lg:w-2/4 focus:outline-orange-300" />
+                    <label htmlFor="nama">Name</label>
+                    <input name="nama" placeholder="Name..." className="mb-3 mt-1 rounded-sm p-2 font-normal shadow-sm w-full lg:w-2/4 focus:outline-orange-300" />
 
                     <label htmlFor="email">Email</label>
-                    <input name="email" placeholder="email.." className="mb-5 mt-1 rounded-sm p-2 font-normal shadow-sm w-full lg:w-2/4 focus:outline-orange-300" />
+                    <input name="email" placeholder="Email..." className="mb-5 mt-1 rounded-sm p-2 font-normal shadow-sm w-full lg:w-2/4 focus:outline-orange-300" />
 
-                    <label htmlFor="pesan">Pesan</label>
-                    <textarea type="text" name="pesan" className="rounded-sm mt-1 font-normal w-full lg:w-2/4 focus:outline-orange-300 h-40"></textarea>
-                    <button type="submit" className="mt-8 bg-orange-200 rounded-lg p-2 w-full shadow-sm hover:opacity-80 lg:w-2/4">Kirim</button>
+                    <label htmlFor="pesan">Message</label>
+                    <textarea placeholder="Message..." type="text" name="pesan" className="rounded-sm mt-1 font-normal w-full lg:w-2/4 focus:outline-orange-300 h-40"></textarea>
+                    <button type="submit" className="mt-8 bg-orange-200 rounded-lg p-2 w-full shadow-sm hover:opacity-80 lg:w-2/4">Submit</button>
                 </form>
             </div>
         </>
@@ -42,14 +42,14 @@ const Page = () => {
             {/* hero section start */}
                 <div id="home" className="bg-slate-200 flex h-full w-full lg:h-screen">
                     <div className="block w-full space-y-3 px-5 mt-16 mb-32 text-base lg:px-32 lg:scale-125 lg:mt-40 lg:ml-40">
-                        <p>Hallo👋...</p>
+                        <p>Hello👋...</p>
 
                         <h1 className="text-2xl font-bold">Frontend <span className="bg-orange-200 transform rotate-3">Web</span></h1>
 
                         <p className="text-orange-500 text-sm">INTRODUCTION</p>
 
-                        <p>saya Asep Supriatna seorang programmer dengan pengalaman 2 tahun, <br /> keahlian saya diantaranya HTML, CSS,
-                            JS, React dan Next.
+                        <p>I am Asep Supriatna, a programmer with 2 years experience, 
+                            My expertise includes HTML, CSS, JS, React and Next.
                         </p><br />
 
                         <a href="#pageDua" className="bg-orange-200 shadow-sm hover:bg-orange-300 p-1">Learn More</a>
@@ -61,11 +61,11 @@ const Page = () => {
                 <div id="pageDua" className="bg-white flex flex-wrap w-full items-center pt-16 pb-16 lg:px-32">
                     <div className="w-full px-5 space-y-3">
                         <h1 className="mx-auto font-bold text-2xl mb-8">My Services</h1>
-                        <p>Berikut adalah beberapa jasa saya diantaranya:</p>
+                        <p>Here are some of my services including:</p>
 
                         <div className="lg:grid xl:grid-cols-3 text-black lg:grid-flow-row lg:gap-12 text-center flex flex-col text-xl">
                             <div className="lg:p-20 mt-3 bg-slate-300 lg:transform lg:hover:rotate-2 w-full lg:rounded-full">Web Developer</div>
-                            <div className="lg:p-20 mt-3 bg-slate-300 lg:transform lg:hover:rotate-2 w-full lg:rounded-full">Prompt</div>
+                            <div className="lg:p-20 mt-3 bg-slate-300 lg:transform lg:hover:rotate-2 w-full lg:rounded-full">Prompt Engineer</div>
                             <div className="lg:p-20 mt-3 bg-slate-300 lg:transform lg:hover:rotate-2 w-full lg:rounded-full">UI/UX</div>
                         </div>
                     </div>
@@ -79,7 +79,7 @@ const Page = () => {
                     <div className="w-full px-5">
                         <h1 className="text-2xl font-bold mb-8">My Collection</h1>
 
-                        <p className="mb-6 font-normal">berikut adalah daftar foto yang di ganerate menggunakan Stable Diffusion</p>
+                        <p className="mb-6 font-normal">The following is a list of photos that were generated using Stable Diffusion</p>
 
                         <div className="flex flex-wrap px-5 mt-16">
                             <div className="bg-orange-200 mt-8 w-full text-base lg:text-lg space-y-2 p-5 rounded-lg shadow-lg lg:w-2/4 lg:scale-75">
