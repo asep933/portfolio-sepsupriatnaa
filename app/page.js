@@ -48,7 +48,7 @@ const Page = () => {
 
                         <p className="text-orange-500 text-sm">INTRODUCTION</p>
 
-                        <p>I am Asep Supriatna, a programmer with 2 years experience, 
+                        <p>I am Asep Supriatna, a programmer with 2 years <br /> experience,
                             My expertise includes HTML, CSS, JS, React and Next.
                         </p><br />
 
@@ -98,7 +98,7 @@ const Page = () => {
                                     className="w-full rounded-lg mb-5"
                                 />
 
-                                <p>A woman with piercing blue eyes elegantly holds an umbrella, a vision of grace in the rain.</p>
+                                <p>Blue-eyed woman with captivating charm. Her eyes, like two sparkling gems, create a mysterious gleam.</p>
                             </div>
                             <div className="bg-orange-200 mt-8 w-full text-base lg:text-lg space-y-2 p-5 rounded-lg shadow-lg lg:w-2/4 lg:scale-75">
                                 <Image 
