@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Form from "@/components/form/page";
 import Line from "@/components/line/page";
+import Contact from "@/components/contact/page";
 import imageSatu from "../public/image_1.png"
 import imageDua from "../public/image_2.png"
 import imageTiga from "../public/image_3.png"
@@ -96,15 +97,7 @@ const Page = () => {
             {/* feedback end */}
 
             {/* contact start */}
-                <div className="bg-white pt-16 pb-32 px-4 w-full flex justify-center items-center flex-col">
-                    <h1 className="text-lg font-semibold bg-orange-200 p-2 transform -rotate-2 hover:rotate-0 mb-20">Social Media</h1>
-
-                    <div className="px-4 block">
-                        <Link href="mailto:asep93339@gmail.com" className="bg-slate-200 p-4 m-5 lg:m-10 hover:bg-slate-300">Email</Link>
-                        <Link href="https://www.instagram.com/sepsupriatnaa/" target="_blank" className="bg-slate-200 lg:m-10 p-4 m-5 hover:bg-slate-300">Instagram</Link>
-                        <Link href="https://wa.me/6285872256552"target="_blank" className="bg-slate-200 p-4 m-5 lg:m-10 hover:bg-slate-300">WhatsApp</Link>
-                    </div>
-                </div>
+                <Contact />
             {/* contact end */}
         </div>
     );
