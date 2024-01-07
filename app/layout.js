@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from './navbar/page'
 import Footer from './footer/page'
+import Back from "@/components/back/page";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
       <body className={`${inter.className} overflow-hidden bg-slate-200`}>
         <Navbar />
           <div className='w-full'>{children}</div>
+          <Back />
         <Footer />
       </body>
     </html>

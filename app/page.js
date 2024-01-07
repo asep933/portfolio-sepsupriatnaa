@@ -1,44 +1,17 @@
 "use client"
 import Image from "next/image";
+import Link from "next/link";
+import Form from "@/components/form/page";
+import Line from "@/components/line/page";
 import imageSatu from "../public/image_1.png"
 import imageDua from "../public/image_2.png"
 import imageTiga from "../public/image_3.png"
 import imageEmpat from "../public/image_4.png"
 import imageLima from "../public/image_5.png"
 
-// komponen form
-const Form = () => {
-    return (
-        <>
-            <div className="flex items-center flex-col min-w-full">
-                <h1 className="text-2xl font-bold mb-8">Contact Me</h1>
-
-                <form className="flex flex-wrap flex-col mt-0 w-full px-5 text-base lg:translate-x-80 font-semibold">
-                    <label htmlFor="nama">Name</label>
-                    <input name="nama" placeholder="Name..." className="mb-3 mt-1 rounded-sm p-2 font-normal shadow-sm w-full lg:w-2/4 focus:outline-orange-300" />
-
-                    <label htmlFor="email">Email</label>
-                    <input name="email" placeholder="Email..." className="mb-5 mt-1 rounded-sm p-2 font-normal shadow-sm w-full lg:w-2/4 focus:outline-orange-300" />
-
-                    <label htmlFor="pesan">Message</label>
-                    <textarea placeholder="Message..." type="text" name="pesan" className="rounded-sm mt-1 font-normal w-full lg:w-2/4 focus:outline-orange-300 h-40"></textarea>
-                    <button type="submit" className="mt-8 bg-orange-200 rounded-lg p-2 w-full shadow-sm hover:opacity-80 lg:w-2/4">Submit</button>
-                </form>
-            </div>
-        </>
-    )
-}
-
-// komponen Hr
-const Line = () => {
-    return (
-        <div className="p-[0.3px] w-full bg-slate-400"></div>
-    )
-}
-
 const Page = () => {
     return (
-        <div className="w-full">
+        <div className="relative w-full">
             {/* hero section start */}
                 <div id="home" className="bg-slate-200 flex h-full w-full lg:h-screen">
                     <div className="block w-full space-y-3 px-5 mt-16 mb-32 text-base lg:px-32 lg:scale-125 lg:mt-40 lg:ml-40">
@@ -52,7 +25,7 @@ const Page = () => {
                             My expertise includes HTML, CSS, JS, React and Next.
                         </p><br />
 
-                        <a href="#pageDua" className="bg-orange-200 shadow-sm hover:bg-orange-300 p-1">Learn More</a>
+                        <Link href="#pageDua" className="bg-orange-200 shadow-sm hover:bg-orange-300 p-1">Learn More</Link>
                     </div>
                 </div>
             {/* hero section end */}
@@ -72,7 +45,7 @@ const Page = () => {
                 </div>
             {/* service section end */}
 
-            <Line />
+                <Line />
 
             {/* portfolio section start*/}
                 <div className="bg-white flex flex-wrap items-center w-full pb-16 pt-16 text-base lg:px-32 font-semibold">
@@ -127,9 +100,9 @@ const Page = () => {
                     <h1 className="text-lg font-semibold bg-orange-200 p-2 transform -rotate-2 hover:rotate-0 mb-20">Social Media</h1>
 
                     <div className="px-4 block">
-                        <a href="mailto:asep93339@gmail.com" className="bg-slate-200 p-4 m-5 lg:m-10 hover:bg-slate-300">Email</a>
-                        <a href="https://www.instagram.com/sepsupriatnaa/" target="_blank" className="bg-slate-200 lg:m-10 p-4 m-5 hover:bg-slate-300">Instagram</a>
-                        <a href="https://wa.me/6285872256552"target="_blank" className="bg-slate-200 p-4 m-5 lg:m-10 hover:bg-slate-300">WhatsApp</a>
+                        <Link href="mailto:asep93339@gmail.com" className="bg-slate-200 p-4 m-5 lg:m-10 hover:bg-slate-300">Email</Link>
+                        <Link href="https://www.instagram.com/sepsupriatnaa/" target="_blank" className="bg-slate-200 lg:m-10 p-4 m-5 hover:bg-slate-300">Instagram</Link>
+                        <Link href="https://wa.me/6285872256552"target="_blank" className="bg-slate-200 p-4 m-5 lg:m-10 hover:bg-slate-300">WhatsApp</Link>
                     </div>
                 </div>
             {/* contact end */}
