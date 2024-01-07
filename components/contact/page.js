@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import email from "/public/email.svg";
 import instagram from "/public/instagram.svg";
-import WhatsApp from "/public/WhatsApp.svg";
+import whatsapp from "/public/whatsapp.svg";
 
 const Contact = () => {
   return (
@@ -33,7 +33,7 @@ const Contact = () => {
 
           <Link href="https://wa.me/6285872256552" target="_blank">
             <Image
-              src={WhatsApp}
+              src={whatsapp}
               alt={"image whatsapp"}
               width={50}
               className="m-8 lg:mx-12 hover:scale-110 transition duration-300 ease-in-out"
