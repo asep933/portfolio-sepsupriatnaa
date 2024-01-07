@@ -9,15 +9,10 @@ import imageDua from "../public/image_2.png"
 import imageTiga from "../public/image_3.png"
 import imageEmpat from "../public/image_4.png"
 import imageLima from "../public/image_5.png"
-import Head from "next/head";
 
 const Page = () => {
     return (
         <div className="relative w-full">
-            <Head>
-                <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-            </Head>
-
             {/* hero section start */}
                 <div id="home" className="bg-slate-200 flex h-full w-full lg:h-screen">
                     <div className="block w-full space-y-3 px-5 mt-16 mb-32 text-base lg:px-32 lg:scale-125 lg:mt-40 lg:ml-40">
