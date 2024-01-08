@@ -15,12 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth m-0 overflow-x-hidden">
       <head>
-        <link
-        rel="icon"
-        href="/favicon.svg"
-        type="image/svg+xml"
-        sizes="any"
-      />
+      <link rel="icon" type="image/x-icon" sizes="any" href="../public/images/favicon.png"/>
       </head>
       <body className={`${inter.className} overflow-hidden bg-slate-200`}>
         <Navbar />
