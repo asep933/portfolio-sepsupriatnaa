@@ -8,11 +8,11 @@ const Contact = () => {
   return (
     <>
       <div className="bg-white pt-16 pb-32 px-4 w-full flex justify-center items-center flex-col">
-        <h1 className="text-lg font-semibold bg-orange-200 p-2 transform -rotate-2 hover:rotate-0 mb-12">
+        <h1 className="fade-in text-lg font-semibold bg-orange-200 p-2 transform -rotate-2 hover:rotate-0 mb-12">
           Social Media
         </h1>
 
-        <div className="flex">
+        <div className="fade-in flex">
           <Link href="mailto:asep93339@gmail.com">
             <Image
               src={email}

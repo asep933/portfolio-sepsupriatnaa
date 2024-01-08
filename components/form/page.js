@@ -1,7 +1,7 @@
 const Form = () => {
     return (
         <>
-            <div className="flex items-center flex-col min-w-full">
+            <div className="fade-in flex items-center flex-col min-w-full">
                 <h1 className="text-2xl font-bold mb-8">Contact Me</h1>
 
                 <form className="flex flex-wrap flex-col mt-0 w-full px-5 text-base lg:translate-x-80 font-semibold">

@@ -16,24 +16,24 @@ const Page = () => {
             {/* hero section start */}
                 <div id="home" className="bg-slate-200 flex h-full w-full lg:h-screen">
                     <div className="block w-full space-y-3 px-5 mt-16 mb-32 text-base lg:px-32 lg:scale-125 lg:mt-40 lg:ml-40">
-                        <p>Hello👋...</p>
+                        <p className="fade-in">Hello👋...</p>
 
-                        <h1 className="text-2xl font-bold">Frontend <span className="bg-orange-200 transform rotate-3">Web</span></h1>
+                        <h1 className="fade-in text-2xl font-bold">Frontend <span className="bg-orange-200 transform rotate-3">Web</span></h1>
 
-                        <p className="text-orange-500 text-sm">INTRODUCTION</p>
+                        <p className="fade-in text-orange-500 text-sm">INTRODUCTION</p>
 
-                        <p>I am Asep Supriatna, a programmer with 2 years <br /> experience,
+                        <p className="fade-in">I am Asep Supriatna, a programmer with 2 years <br /> experience,
                             My expertise includes HTML, CSS, JS, React and Next.
                         </p><br />
 
-                        <Link href="#pageDua" className="bg-orange-200 shadow-sm hover:bg-orange-300 p-1">Learn More</Link>
+                        <Link href="#pageDua" className="fade-in bg-orange-200 shadow-sm hover:bg-orange-300 p-1">Learn More</Link>
                     </div>
                 </div>
             {/* hero section end */}
 
             {/* service section start */}
                 <div id="pageDua" className="bg-white flex flex-wrap w-full items-center pt-16 pb-16 lg:px-32">
-                    <div className="w-full px-5 space-y-3">
+                    <div className="fade-in w-full px-5 space-y-3">
                         <h1 className="mx-auto font-bold text-2xl mb-8">My Services</h1>
                         <p>Here are some of my services including:</p>
 
@@ -50,7 +50,7 @@ const Page = () => {
 
             {/* portfolio section start*/}
                 <div className="bg-white flex flex-wrap items-center w-full pb-16 pt-16 text-base lg:px-32 font-semibold">
-                    <div className="w-full px-5">
+                    <div className="fade-in w-full px-5">
                         <h1 className="text-2xl font-bold mb-8">My Collection</h1>
 
                         <p className="mb-6 font-normal">The following is a list of photos that were generated using Stable Diffusion</p>
