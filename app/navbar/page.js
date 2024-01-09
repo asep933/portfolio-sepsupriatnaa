@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Bebas_Neue } from "next/font/google";
 import { useState, useEffect } from "react";
-import githubLogo from "/public/github.svg"
+import github from "/public/github.svg"
 
 const bebas_neue = Bebas_Neue({
   display: 'swap',
@@ -64,7 +64,7 @@ const Navbar = () => {
               <div className="absolute right-20 lg:right-12 top-[13.1px]">
                 <Link href={'https://github.com/asep933/portfolio-sepsupriatnaa'} target="_blank">
                   <Image 
-                    src={githubLogo}
+                    src={github}
                     alt="gitHub Image"
                     className="hover:scale-105 transition duration-300 ease-in-out"
                   />
