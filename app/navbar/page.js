@@ -1,9 +1,8 @@
 "use client"
 import Link from "next/link";
-import Image from "next/image";
 import { Bebas_Neue } from "next/font/google";
 import { useState, useEffect } from "react";
-import github from "/public/github-image.svg"
+import GitHub from "@/components/github/page";
 
 const bebas_neue = Bebas_Neue({
   display: 'swap',
@@ -61,15 +60,9 @@ const Navbar = () => {
                 </button>
               </div>
 
-              <div className="absolute right-20 lg:right-12 top-[13.1px]">
-                <Link href={'https://github.com/asep933/portfolio-sepsupriatnaa'} target="_blank">
-                  <Image 
-                    src={github}
-                    alt="gitHub Image"
-                    className="hover:scale-105 transition duration-300 ease-in-out"
-                  />
-                </Link>
-              </div>
+              {/* Link ke GitHub start */}
+              <GitHub />
+              {/* Link ke GitHub end */}
 
               {showMenu && (<div id="menu" className="absolute bg-slate-100 w-2/4 z-20 t-10 top-16 right-5 rounded-lg shadow-lg p-10
               transition duration-300 ease-in-out lg:top-0 lg:right-32 lg:shadow-none lg:bg-transparent lg:flex lg:justify-end lg:p-0 lg:rounded-none">
