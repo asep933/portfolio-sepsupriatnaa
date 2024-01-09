@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Bebas_Neue } from "next/font/google";
 import { useState, useEffect } from "react";
-import github from "/public/images/github-image.svg"
+import github from "/public/github-image.svg"
 
 const bebas_neue = Bebas_Neue({
   display: 'swap',
