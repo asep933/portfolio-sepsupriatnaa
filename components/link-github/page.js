@@ -6,13 +6,13 @@ import github2 from "/public/github-image-2.png";
 
 const GitHub = () => {
   return (
-    <div className="absolute right-20 lg:right-12 top-[12.5px]">
+    <div className="absolute right-20 lg:right-12 top-[12.5px] lg:pt-[7.4px] lg:pr-3">
       <Link
         href="https://github.com/asep933/portfolio-sepsupriatnaa"
         target="_blank"
       >
         <Image
-          src={github}
+          src={github2}
           alt="image github"
           width={24}
           className="hover:scale-105 transition duration-300 ease-in-out lg:block hidden"
