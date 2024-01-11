@@ -3,24 +3,28 @@
 @tailwind utilities;
 
 .shadow-nav {
-    box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2)
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
 }
 
 .humberger-line {
-    @apply block h-[2px] w-[18px] bg-slate-500 rounded-sm;
+  @apply block h-[2px] w-[18px] bg-slate-500 rounded-sm;
+}
+
+.bg-nav {
+  background-color: rgb(255, 191, 219, 0.4);
 }
 
 @keyframes fadeInUp {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  
-  .fade-in {
-    animation: fadeInUp 0.4s ease-in-out;
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
+}
+
+.fade-in {
+  animation: fadeInUp 0.4s ease-in-out;
+}

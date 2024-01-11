@@ -24,8 +24,11 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${inter.className} overflow-hidden bg-slate-200`}>
         <Navbar />
+
         <div className="w-full">{children}</div>
+
         <Back />
+
         <Footer />
       </body>
     </html>
