@@ -15,6 +15,7 @@ const bebas_neue = Bebas_Neue({
 const Navbar = () => {
   const [addHumberger, setAddHumberger] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
+  const [dark, setDark] = useState(false);
 
   const handleAnimate = () => {
     setAddHumberger(!addHumberger);
@@ -49,7 +50,7 @@ const Navbar = () => {
   }, [addHumberger, showMenu]);
 
   return (
-    <div>
+    <div className={`${dark ? "dark" : ""}`}>
       <div className="dark:bg-transparent flex justify-between bg-nav bg-nav shadow-nav w-full items-center p-2 bg-transparent fixed z-50 backdrop-blur-sm">
         {/* logo */}
         <div className="block text-green-900 text-2xl px-4 lg:ml-32">
@@ -125,7 +126,7 @@ const Navbar = () => {
                 Blog
               </Link>
               <div className="lg:hidden">
-                <ToggleDark />
+                <ToggleDark dark={dark} setDark={setDark} />
               </div>
             </div>
           </div>
@@ -165,7 +166,7 @@ const Navbar = () => {
             </Link>
 
             <div className="lg:block hidden">
-              <ToggleDark />
+              <ToggleDark dark={dark} setDark={setDark} />
             </div>
           </div>
         </div>
