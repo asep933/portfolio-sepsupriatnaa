@@ -2,9 +2,9 @@
 
 import Link from "next/link";
 import { Bebas_Neue } from "next/font/google";
-import { useState, useEffect, useContext } from "react";
-import GitHub from "@/components/link-github/page";
-import ToggleDark from "@/components/toggle-dark/page";
+import { useState, useEffect } from "react";
+import GitHub from "../components/link-github/page";
+import ToggleDark from "../components/toggle-dark/page";
 
 const bebas_neue = Bebas_Neue({
   display: "swap",
@@ -15,7 +15,6 @@ const bebas_neue = Bebas_Neue({
 const Navbar = () => {
   const [addHumberger, setAddHumberger] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
-  const [dark, setDark] = useState(false);
 
   const handleAnimate = () => {
     setAddHumberger(!addHumberger);
@@ -50,7 +49,7 @@ const Navbar = () => {
   }, [addHumberger, showMenu]);
 
   return (
-    <div className={`${dark ? "dark" : ""}`}>
+    <div>
       <div className="dark:bg-transparent flex justify-between bg-nav bg-nav shadow-nav w-full items-center p-2 bg-transparent fixed z-50 backdrop-blur-sm">
         {/* logo */}
         <div className="block text-green-900 text-2xl px-4 lg:ml-32">
@@ -126,7 +125,7 @@ const Navbar = () => {
                 Blog
               </Link>
               <div className="lg:hidden">
-                <ToggleDark dark={dark} setDark={setDark} />
+                <ToggleDark />
               </div>
             </div>
           </div>
@@ -139,7 +138,7 @@ const Navbar = () => {
           className="hidden relative bg-slate-100 w-2/4 z-20 t-10 top-16 right-5 rounded-lg shadow-lg p-10
               transition duration-300 ease-in-out lg:top-0 lg:right-32 lg:shadow-none lg:bg-transparent lg:flex lg:justify-end lg:p-0 lg:rounded-none"
         >
-          <div className="lg:font-normal lg:flex lg:items-center lg:space-x-5 lg:translate-x-8 lg:mt-3 pb-3">
+          <div className="dark:text-black lg:font-normal lg:flex lg:items-center lg:space-x-5 lg:translate-x-8 lg:mt-3 pb-3">
             <Link
               onClick={handleClose}
               id="linkMenu"
@@ -166,7 +165,7 @@ const Navbar = () => {
             </Link>
 
             <div className="lg:block hidden">
-              <ToggleDark dark={dark} setDark={setDark} />
+              <ToggleDark />
             </div>
           </div>
         </div>

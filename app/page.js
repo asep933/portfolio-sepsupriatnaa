@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import Form from "@/components/form/page";
-import Line from "@/components/line/page";
-import Contact from "@/components/contact/page";
+import Form from "./components/form/page";
+import Line from "./components/line/page";
+import Contact from "./components/contact/page";
 import imageSatu from "../public/image_1.png";
 import imageDua from "../public/image_2.png";
 import imageTiga from "../public/image_3.png";
@@ -23,12 +23,14 @@ const Page = () => {
 
           <h1 className="fade-in text-2xl font-bold">
             Frontend{" "}
-            <span className="bg-orange-200 dark:text-black transform rotate-3">
+            <span className="bg-orange-200 dark:text-white dark:bg-slate-600 transform rotate-3">
               Web
             </span>
           </h1>
 
-          <p className="fade-in text-orange-500 text-sm">INTRODUCTION</p>
+          <p className="dark:text-slate-600 fade-in text-orange-500 text-sm">
+            INTRODUCTION
+          </p>
 
           <p className="fade-in">
             I am Asep Supriatna, a programmer with 2 years <br /> experience, My
@@ -38,7 +40,7 @@ const Page = () => {
 
           <Link
             href="#pageDua"
-            className="fade-in dark:text-black bg-orange-200 shadow-sm hover:bg-orange-300 p-1"
+            className="dark:bg-slate-600 dark:hover:opacity-80 fade-in dark:text-white bg-orange-200 shadow-sm hover:bg-orange-300 p-1"
           >
             Learn More
           </Link>
