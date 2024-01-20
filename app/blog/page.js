@@ -9,7 +9,7 @@ const Blog = () => {
             className="bg-slate-100 block h-40 py-2 px-5 overflow-hidden space-y-3 rounded-sm w-full outline-offset-1 shadow-sm"
             href="/blog/blog-one"
           >
-            <h1 className="underline hover:opacity-80">
+            <h1 className="hover:underline hover:opacity-80">
               Mengeksplorasi Keuntungan Penggunaan Kecerdasan Buatan (AI) di Era
               Modern
             </h1>
@@ -28,7 +28,7 @@ const Blog = () => {
             className="bg-slate-100 block h-40 py-2 px-5 overflow-hidden space-y-3 rounded-sm w-full outline-offset-1 shadow-sm"
             href={"/blog/blog-two"}
           >
-            <h1 className="underline hover:opacity-80">
+            <h1 className="hover:underline hover:opacity-80">
               Tantangan dan Dampak Negatif Penggunaan Kecerdasan Buatan (AI)
             </h1>
 

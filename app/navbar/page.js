@@ -1,5 +1,4 @@
 "use client";
-
 import Link from "next/link";
 import { Bebas_Neue } from "next/font/google";
 import { useState, useEffect } from "react";
@@ -15,7 +14,6 @@ const bebas_neue = Bebas_Neue({
 const Navbar = () => {
   const [addHumberger, setAddHumberger] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
-  const [dark, setDark] = useState(false);
 
   const handleAnimate = () => {
     setAddHumberger(!addHumberger);
@@ -50,12 +48,13 @@ const Navbar = () => {
   }, [addHumberger, showMenu]);
 
   return (
-    <div className={`${dark ? "dark" : ""}`}>
-      <div className="dark:bg-transparent flex justify-between bg-nav bg-nav shadow-nav w-full items-center p-2 bg-transparent fixed z-50 backdrop-blur-sm">
+    <div>
+      <div className="dark:bg-slate-200 dark:bg-opacity-75 flex justify-between bg-nav bg-nav shadow-nav w-full items-center p-2 bg-transparent fixed z-50 backdrop-blur-sm">
         {/* logo */}
         <div className="block text-green-900 text-2xl px-4 lg:ml-32">
           <Link className={`mx-5 ${bebas_neue.className}`} href={"/"}>
-            sepsupriatn<span className="text-orange-400">aa</span>
+            sepsupriatn
+            <span className="dark:text-orange-500 text-orange-400">aa</span>
           </Link>
         </div>
         {/* logo */}
@@ -126,7 +125,7 @@ const Navbar = () => {
                 Blog
               </Link>
               <div className="lg:hidden">
-                <ToggleDark dark={dark} setDark={setDark} />
+                <ToggleDark />
               </div>
             </div>
           </div>
@@ -166,7 +165,7 @@ const Navbar = () => {
             </Link>
 
             <div className="lg:block hidden">
-              <ToggleDark dark={dark} setDark={setDark} />
+              <ToggleDark />
             </div>
           </div>
         </div>

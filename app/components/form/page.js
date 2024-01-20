@@ -1,10 +1,10 @@
 const Form = () => {
   return (
     <>
-      <div className="dark:bg-slate-300 dark:text-black pt-16 pb-16 fade-in flex items-center flex-col min-w-full">
-        <h1 className="text-2xl font-bold mb-8">Contact Me</h1>
+      <div className="dark:bg-slate-900 dark:text-black pt-16 pb-16 fade-in flex items-center flex-col min-w-full">
+        <h1 className="dark:text-white text-2xl font-bold mb-8">Contact Me</h1>
 
-        <form className="dark:text-black flex flex-wrap flex-col mt-0 w-full px-5 text-base lg:translate-x-80 font-semibold">
+        <form className="dark:text-white flex flex-wrap flex-col mt-0 w-full px-5 text-base lg:translate-x-80 font-semibold">
           <label htmlFor="nama">Name</label>
           <input
             name="nama"

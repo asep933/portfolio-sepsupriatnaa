@@ -16,31 +16,34 @@ const Page = () => {
       {/* hero section start */}
       <div
         id="home"
-        className="dark:bg-slate-300 bg-slate-200 flex h-full w-full lg:h-screen"
+        className="dark:bg-slate-900 bg-slate-200 flex h-full w-full lg:h-screen"
       >
-        <div className="dark:text-black block w-full space-y-3 px-5 mt-16 mb-32 text-base lg:px-32 lg:scale-125 lg:mt-40 lg:ml-40">
+        <div
+          className="dark:text-white block w-full space-y-3 px-5 mt-16 mb-32 text-base
+        lg:flex lg:justify-center lg:px-32 lg:flex-col lg:text-2xl"
+        >
           <p className="fade-in">Hello👋...</p>
 
-          <h1 className="fade-in text-2xl font-bold">
+          <h1 className="fade-in text-2xl font-bold lg:text-4xl">
             Frontend{" "}
             <span className="bg-orange-200 dark:text-white dark:bg-slate-600 transform rotate-3">
               Web
             </span>
           </h1>
 
-          <p className="dark:text-slate-600 fade-in text-orange-500 text-sm">
+          <p className="dark:text-orange-500 fade-in text-orange-500 text-sm">
             INTRODUCTION
           </p>
 
-          <p className="fade-in">
+          <p className="fade-in pb-4">
             I am Asep Supriatna, a programmer with 2 years <br /> experience, My
             expertise includes HTML, CSS, JS, React and Next.
           </p>
-          <br />
 
           <Link
             href="#pageDua"
-            className="dark:bg-slate-600 dark:hover:opacity-80 fade-in dark:text-white bg-orange-200 shadow-sm hover:bg-orange-300 p-1"
+            className="dark:bg-slate-600 dark:hover:opacity-80 fade-in py-0 dark:text-white bg-orange-200 shadow-sm hover:bg-orange-300 p-1
+            lg:w-44 lg:text-center lg:text-md"
           >
             Learn More
           </Link>
