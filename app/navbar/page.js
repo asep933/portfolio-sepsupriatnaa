@@ -103,7 +103,7 @@ const Navbar = () => {
               <Link
                 onClick={handleClose}
                 id="linkMenu"
-                className=" hover:text-orange-500 lg:hidden dark:hover:text-orange-300"
+                className=" dark:hover:text-slate-900 hover:text-orange-500 lg:hidden"
                 href={"/"}
               >
                 Home
@@ -111,7 +111,7 @@ const Navbar = () => {
               <Link
                 onClick={handleClose}
                 id="linkMenu"
-                className="hover:text-orange-500 lg:hidden dark:hover:text-orange-300"
+                className="dark:hover:text-slate-900 hover:text-orange-500 lg:hidden"
                 href={"/about"}
               >
                 About
@@ -119,7 +119,7 @@ const Navbar = () => {
               <Link
                 onClick={handleClose}
                 id="linkMenu"
-                className=" hover:text-orange-500 lg:hidden dark:hover:text-orange-300"
+                className=" dark:hover:text-slate-900 hover:text-orange-500 lg:hidden"
                 href={"/blog"}
               >
                 Blog
@@ -142,7 +142,7 @@ const Navbar = () => {
             <Link
               onClick={handleClose}
               id="linkMenu"
-              className=" hover:text-orange-500"
+              className="dark:hover:text-slate-50 hover:text-orange-500"
               href={"/"}
             >
               Home
@@ -150,7 +150,7 @@ const Navbar = () => {
             <Link
               onClick={handleClose}
               id="linkMenu"
-              className="hover:text-orange-500"
+              className="dark:hover:text-slate-50 hover:text-orange-500"
               href={"/about"}
             >
               About
@@ -158,7 +158,7 @@ const Navbar = () => {
             <Link
               onClick={handleClose}
               id="linkMenu"
-              className=" hover:text-orange-500"
+              className=" dark:hover:text-slate-50 hover:text-orange-500"
               href={"/blog"}
             >
               Blog

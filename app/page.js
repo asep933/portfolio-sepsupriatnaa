@@ -9,8 +9,15 @@ import imageDua from "../public/image_2.png";
 import imageTiga from "../public/image_3.png";
 import imageEmpat from "../public/image_4.png";
 import imageLima from "../public/image_5.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Page = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className={`relative w-full`}>
       {/* hero section start */}
@@ -19,8 +26,9 @@ const Page = () => {
         className="dark:bg-slate-900 bg-slate-200 flex h-full w-full lg:h-screen"
       >
         <div
-          className="dark:text-white block w-full space-y-3 px-5 mt-16 mb-32 text-base
-        lg:flex lg:justify-center lg:px-32 lg:flex-col lg:text-2xl"
+          data-aos="zoom-in-up"
+          className="dark:text-white block w-full space-y-3 px-5 mt-32 mb-32 text-base
+         lg:flex lg:justify-center lg:px-32 lg:flex-col lg:text-2xl"
         >
           <p className="fade-in">Hello👋...</p>
 
@@ -56,18 +64,32 @@ const Page = () => {
         id="pageDua"
         className="dark:bg-slate-600 bg-white flex flex-wrap w-full items-center pt-16 pb-16 lg:px-32"
       >
-        <div className="dark:text-white fade-in w-full px-5 space-y-3">
-          <h1 className="mx-auto font-bold text-2xl mb-8">My Services</h1>
-          <p>Here are some of my services including:</p>
+        <div className="dark:text-white fade-in lg:text-2xl w-full px-5 space-y-3">
+          <h1
+            data-aos="zoom-in-up"
+            className="mx-auto font-bold lg:text-4xl text-2xl mb-8"
+          >
+            My Services
+          </h1>
+          <p data-aos="zoom-in-up">Here are some of my services including:</p>
 
-          <div className="lg:grid xl:grid-cols-3 text-black lg:grid-flow-row lg:gap-12 text-center flex flex-col text-xl">
-            <div className="lg:p-20 mt-3 bg-slate-300 lg:transform lg:hover:rotate-2 w-full lg:rounded-full">
+          <div className="lg:grid xl:grid-cols-3 py-16 text-black lg:grid-flow-row lg:gap-12 text-center flex flex-col text-xl">
+            <div
+              data-aos="zoom-in-up"
+              className="lg:p-20 mt-3 bg-slate-300 lg:transform lg:hover:rotate-2 w-full lg:rounded-full"
+            >
               Web Developer
             </div>
-            <div className="lg:p-20 mt-3 bg-slate-300 lg:transform lg:hover:rotate-2 w-full lg:rounded-full">
+            <div
+              data-aos="zoom-in-up"
+              className="lg:p-20 mt-3 bg-slate-300 lg:transform lg:hover:rotate-2 w-full lg:rounded-full"
+            >
               Prompt Engineer
             </div>
-            <div className="lg:p-20 mt-3 bg-slate-300 lg:transform lg:hover:rotate-2 w-full lg:rounded-full">
+            <div
+              data-aos="zoom-in-up"
+              className="lg:p-20 mt-3 bg-slate-300 lg:transform lg:hover:rotate-2 w-full lg:rounded-full"
+            >
               UI/UX
             </div>
           </div>
@@ -79,10 +101,15 @@ const Page = () => {
 
       {/* portfolio section start*/}
       <div className="dark:bg-slate-600 bg-white flex flex-wrap items-center w-full pb-16 pt-16 text-base lg:px-32 font-semibold">
-        <div className="dark:text-white fade-in w-full px-5">
-          <h1 className="text-2xl font-bold mb-8">My Collection</h1>
+        <div className="dark:text-white fade-in lg:text-2xl w-full px-5">
+          <h1
+            data-aos="zoom-in-up"
+            className="lg:text-4xl text-2xl font-bold mb-8"
+          >
+            My Collection
+          </h1>
 
-          <p className="mb-6 font-normal">
+          <p data-aos="zoom-in-up" className="mb-6 font-normal">
             The following is a list of photos that were generated using Stable
             Diffusion
           </p>
@@ -93,9 +120,10 @@ const Page = () => {
                 src={imageSatu}
                 width={200}
                 className="w-full rounded-lg mb-5"
+                data-aos="zoom-in-up"
               />
 
-              <p>
+              <p data-aos="zoom-in-up">
                 A graceful woman is one who carries herself with poise and
                 elegance.
               </p>
@@ -105,9 +133,10 @@ const Page = () => {
                 src={imageEmpat}
                 width={200}
                 className="w-full rounded-lg mb-5"
+                data-aos="zoom-in-up"
               />
 
-              <p>
+              <p data-aos="zoom-in-up">
                 Blue-eyed woman with captivating charm. Her eyes, like two
                 sparkling gems, create a mysterious gleam.
               </p>
@@ -117,9 +146,10 @@ const Page = () => {
                 src={imageLima}
                 width={200}
                 className="w-full rounded-lg mb-5"
+                data-aos="zoom-in-up"
               />
 
-              <p>
+              <p data-aos="zoom-in-up">
                 A cowboy thief, clad in rugged attire, deftly maneuvers through
                 the shadows with a larcenous intent.
               </p>

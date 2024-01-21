@@ -30,11 +30,8 @@ export default function RootLayout({ children }) {
         <Provider attribute="class">
           <Navbar />
           <LoadingFirst />
-
           <div className="w-full">{children}</div>
-
           <Back />
-
           <Footer />
         </Provider>
       </body>

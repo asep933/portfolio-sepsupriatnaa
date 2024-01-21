@@ -28,10 +28,3 @@
 .fade-in {
   animation: fadeInUp 0.4s ease-in-out;
 }
-
-.center-footer {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
