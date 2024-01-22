@@ -1,9 +1,11 @@
 "use client";
 import Link from "next/link";
 import { Bebas_Neue } from "next/font/google";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import GitHub from "../components/link-github/page";
 import ToggleDark from "../components/toggle-dark/page";
+import useSound from "use-sound";
+import { ReactSVG } from "react-svg";
 
 const bebas_neue = Bebas_Neue({
   display: "swap",
@@ -14,6 +16,14 @@ const bebas_neue = Bebas_Neue({
 const Navbar = () => {
   const [addHumberger, setAddHumberger] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
+  const [playbackRate, setPlaybcakRate] = useState(0);
+  const [volume, setVolume] = useState(0.25);
+  const [interrupt, setInterrupt] = useState(true);
+  const [play] = useSound("../../musik-latar.mp3", {
+    playbackRate,
+    volume,
+    interrupt,
+  });
 
   const handleAnimate = () => {
     setAddHumberger(!addHumberger);
@@ -49,9 +59,29 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="dark:bg-slate-200 dark:bg-opacity-75 flex justify-between bg-nav bg-nav shadow-nav w-full items-center p-2 bg-transparent fixed z-50 backdrop-blur-sm">
+      <div
+        className="dark:bg-slate-200 dark:bg-opacity-75 flex lg:justify-between bg-nav bg-nav
+      shadow-nav w-full items-center p-2 bg-transparent fixed z-50 backdrop-blur-sm"
+      >
+        <button onClick={play}>
+          <ReactSVG
+            className="h-4 absolute -top-[51.9rem] left-7 lg:scale-125 lg:-top-[64.7rem]
+            lg:left-24 lg:mb-16"
+            src="../../logo-music.svg"
+            beforeInjection={(svg) => {
+              svg.classList.add("w-4");
+              svg.classList.add("hover:scale-110");
+              svg.classList.add("hover:-rotate-12");
+              svg.classList.add("hover:duration-300");
+              svg.classList.add("lg:hover:scale-110");
+              svg.classList.add("lg:hover:-rotate-12");
+              svg.classList.add("lg:hover:duration-300");
+            }}
+          />
+        </button>
+
         {/* logo */}
-        <div className="block text-green-900 text-2xl px-4 lg:ml-32">
+        <div className="block text-green-900 text-2xl pl-8 px-4 lg:ml-32 lg:absolute lg:-left-10">
           <Link className={`mx-5 ${bebas_neue.className}`} href={"/"}>
             sepsupriatn
             <span className="dark:text-orange-500 text-orange-400">aa</span>
@@ -62,7 +92,7 @@ const Navbar = () => {
         {/* humberger */}
         <div
           id="humberger"
-          className="flex items-center px-4 transform scale-150 lg:hidden"
+          className="flex items-center absolute right-0 px-4 transform scale-150 lg:hidden"
         >
           <button
             onClick={handleAnimate}

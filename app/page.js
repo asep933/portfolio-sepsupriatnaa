@@ -28,7 +28,7 @@ const Page = () => {
         <div
           data-aos="zoom-in-up"
           className="dark:text-white block w-full space-y-3 px-5 mt-32 mb-32 text-base
-         lg:flex lg:justify-center lg:px-32 lg:flex-col lg:text-2xl"
+         lg:flex lg:justify-center lg:px-36 lg:flex-col lg:text-2xl"
         >
           <p className="fade-in">Hello👋...</p>
 
