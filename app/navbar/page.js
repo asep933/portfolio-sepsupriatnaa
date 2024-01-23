@@ -59,7 +59,7 @@ const Navbar = () => {
         {/* button music end*/}
 
         {/* logo */}
-        <div className="block text-green-900 text-2xl ml-6 px-4 lg:ml-40 lg:absolute lg:-left-10">
+        <div className="block text-green-900 text-2xl ml-5 px-4 lg:ml-40 lg:absolute lg:-left-10">
           <Link className={`mx-5 ${bebas_neue.className}`} href={"/"}>
             sepsupriatn
             <span className="dark:text-orange-500 text-orange-400">aa</span>
@@ -101,43 +101,44 @@ const Navbar = () => {
         {/* Link ke GitHub end */}
 
         {/* Menu Mobile start */}
-        {showMenu && (
-          <div
-            id="menu"
-            className="dark:bg-slate-400 dark:text-white absolute bg-slate-100 w-2/4 z-20 t-10 top-16 right-5 rounded-lg shadow-lg p-10
-              transition duration-300 ease-in-out lg:top-0 lg:right-32 lg:shadow-none lg:bg-transparent lg:flex lg:justify-end lg:p-0 lg:rounded-none"
-          >
-            <div className="flex flex-col justify-center items-center space-y-4 font-normal lg:block lg:space-x-5 lg:translate-x-8 lg:mt-3">
-              <Link
-                onClick={handleClose}
-                id="linkMenu"
-                className=" dark:hover:text-slate-900 hover:text-orange-500 lg:hidden"
-                href={"/"}
-              >
-                Home
-              </Link>
-              <Link
-                onClick={handleClose}
-                id="linkMenu"
-                className="dark:hover:text-slate-900 hover:text-orange-500 lg:hidden"
-                href={"/about"}
-              >
-                About
-              </Link>
-              <Link
-                onClick={handleClose}
-                id="linkMenu"
-                className=" dark:hover:text-slate-900 hover:text-orange-500 lg:hidden"
-                href={"/blog"}
-              >
-                Blog
-              </Link>
-              <div className="lg:hidden">
-                <ToggleDark />
-              </div>
+        <div
+          id="menu"
+          className={`${
+            showMenu ? "scale-100" : 0
+          } scale-0 dark:bg-slate-400 dark:text-white absolute bg-slate-100 w-2/4 z-20 t-10 top-16 right-5 rounded-lg shadow-lg p-10
+              transition duration-500 ease-in-out lg:top-0 lg:right-32 lg:shadow-none lg:bg-transparent lg:flex lg:justify-end lg:p-0 lg:rounded-none`}
+        >
+          <div className="flex flex-col justify-center items-center space-y-4 font-normal lg:block lg:space-x-5 lg:translate-x-8 lg:mt-3">
+            <Link
+              onClick={handleClose}
+              id="linkMenu"
+              className=" dark:hover:text-slate-900 hover:text-orange-500 lg:hidden"
+              href={"/"}
+            >
+              Home
+            </Link>
+            <Link
+              onClick={handleClose}
+              id="linkMenu"
+              className="dark:hover:text-slate-900 hover:text-orange-500 lg:hidden"
+              href={"/about"}
+            >
+              About
+            </Link>
+            <Link
+              onClick={handleClose}
+              id="linkMenu"
+              className=" dark:hover:text-slate-900 hover:text-orange-500 lg:hidden"
+              href={"/blog"}
+            >
+              Blog
+            </Link>
+            <div className="lg:hidden">
+              <ToggleDark />
             </div>
           </div>
-        )}
+        </div>
+
         {/* Menu Mobile end */}
 
         {/* Menu Pc Start */}

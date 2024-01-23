@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import useSound from "use-sound";
 import { ReactSVG } from "react-svg";
 
@@ -20,16 +20,16 @@ const ButtonMusic = () => {
 
   return (
     <>
-      <div className="absolute left-10 -top-[2.5px] lg:left-[7.6rem] lg:top-[0.3rem] z-[2222]">
+      <div className="absolute left-9 -top-[2.5px] lg:left-[7.6rem] lg:top-[0.3rem] z-[2222]">
         <button onClick={handlePlay}>
           <div
             className={`${
               !showButton ? "scale-0" : "scale-100"
-            } bg-slate-600 p-[1.2px] w-5 -rotate-45 absolute top-[26px] -left-[4.5px] transition duration-500 ease-in-out`}
+            } bg-slate-600 p-[1.2px] w-5 -rotate-45 absolute top-[25.8px] -left-[4.5px] transition duration-500 ease-in-out`}
           ></div>
 
           <ReactSVG
-            className="h-4 absolute lg:scale-110
+            className="h-4 absolute lg:scale-110 z-10
             "
             src="../../logo-music.svg"
             beforeInjection={(svg) => {
