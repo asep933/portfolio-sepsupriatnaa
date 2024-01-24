@@ -1,7 +1,8 @@
 const Form = () => {
   return (
     <>
-      <div className="dark:bg-slate-900 dark:text-black pt-16 pb-16 fade-in flex items-center flex-col min-w-full">
+      <div className="dark:bg-slate-900 dark:text-black pt-16 pb-16 fade-in flex items-center
+      flex-col min-w-full lg:pb-32 lg:pt-32">
         <h1
           data-aos="zoom-in-up"
           className="dark:text-white text-2xl font-bold mb-8"

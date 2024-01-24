@@ -22,12 +22,6 @@ const ButtonMusic = () => {
     <>
       <div className="absolute left-9 -top-[2.5px] lg:left-[7.6rem] lg:top-[0.3rem] z-[2222]">
         <button onClick={handlePlay}>
-          <div
-            className={`${
-              !showButton ? "scale-0" : "scale-100"
-            } bg-slate-600 p-[1.2px] w-5 -rotate-45 absolute top-[25.8px] -left-[4.5px] transition duration-500 ease-in-out`}
-          ></div>
-
           <ReactSVG
             className="h-4 absolute lg:scale-110 z-10
             "
@@ -43,6 +37,12 @@ const ButtonMusic = () => {
               svg.classList.add("lg:hover:duration-300");
             }}
           />
+
+          <div
+            className={`${
+              !showButton ? "scale-0" : "scale-100"
+            } bg-slate-600 p-[1.2px] w-5 -rotate-45 absolute top-[25.8px] -left-[4.5px] lg:-left-[3.8px] transition duration-500 ease-in-out`}
+          ></div>
         </button>
       </div>
     </>

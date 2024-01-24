@@ -62,7 +62,8 @@ const Page = () => {
       {/* service section start */}
       <div
         id="pageDua"
-        className="dark:bg-slate-600 bg-white flex flex-wrap w-full items-center pt-16 pb-16 lg:px-32"
+        className="dark:bg-slate-600 bg-white flex flex-wrap w-full items-center pt-16 pb-16
+        lg:pt-32 lg:pb-32 lg:px-32"
       >
         <div className="dark:text-white fade-in lg:text-2xl w-full px-5 space-y-3">
           <h1
@@ -100,7 +101,10 @@ const Page = () => {
       <Line />
 
       {/* portfolio section start*/}
-      <div className="dark:bg-slate-600 bg-white flex flex-wrap items-center w-full pb-16 pt-16 text-base lg:px-32 font-semibold">
+      <div
+        className="dark:bg-slate-600 bg-white flex flex-wrap items-center w-full pb-16 pt-16 text-base
+      lg:pt-32 lg:pb-32 lg:px-32 font-semibold"
+      >
         <div className="dark:text-white fade-in lg:text-2xl w-full px-5">
           <h1
             data-aos="zoom-in-up"
