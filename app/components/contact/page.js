@@ -8,12 +8,12 @@ const Contact = () => {
   return (
     <>
       <div
-        className="dark:bg-slate-900 dark:text-black bg-white pt-16 pb-16 px-4 w-full
-      flex justify-center items-center flex-col lg:pb-32 lg:pt-32"
+        className="flex w-full flex-col items-center justify-center bg-white px-4
+      pb-16 pt-16 dark:bg-slate-900 dark:text-black lg:pb-32 lg:pt-32"
       >
         <h1
           data-aos="zoom-in-up"
-          className="dark:bg-slate-400 fade-in text-lg font-semibold bg-orange-200 p-2 transform -rotate-2 hover:rotate-0 mb-12"
+          className="fade-in mb-12 -rotate-2 transform bg-orange-200 p-2 text-lg font-semibold hover:rotate-0 dark:bg-slate-400"
         >
           Social Media
         </h1>
@@ -24,7 +24,7 @@ const Contact = () => {
               src={email}
               alt={"image email"}
               width={50}
-              className="m-8 lg:mx-12 hover:scale-110 transition duration-300 ease-in-out hover:rotate-12"
+              className="m-8 transition duration-300 ease-in-out hover:rotate-12 hover:scale-110 lg:mx-12"
             />
           </Link>
 
@@ -37,7 +37,7 @@ const Contact = () => {
               src={instagram}
               alt={"image instagram"}
               width={50}
-              className="m-8 lg:mx-12 hover:scale-110 transition duration-300 ease-in-out"
+              className="m-8 transition duration-300 ease-in-out hover:scale-110 lg:mx-12"
             />
           </Link>
 
@@ -50,7 +50,7 @@ const Contact = () => {
               src={whatsapp}
               alt={"image whatsapp"}
               width={50}
-              className="m-8 lg:mx-12 hover:scale-110 transition duration-300 ease-in-out"
+              className="m-8 transition duration-300 ease-in-out hover:scale-110 lg:mx-12"
             />
           </Link>
         </div>

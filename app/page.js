@@ -11,35 +11,47 @@ import imageEmpat from "../public/image_4.png";
 import imageLima from "../public/image_5.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
+import Description from "./components/description/page";
 
 const Page = () => {
+  const [web, setWeb] = useState(false);
+  const [prompt, setPrompt] = useState(false);
+  const [uiux, setUiux] = useState(false);
+  const [backBlur, setBackBlur] = useState(false);
+
   useEffect(() => {
     AOS.init();
   }, []);
 
   return (
-    <div className={`relative w-full`}>
+    <div>
+      <span></span>
+
+      {backBlur && (
+        <div className="fixed z-[9999] h-screen w-full bg-transparent bg-opacity-20 backdrop-blur-sm"></div>
+      )}
+
       {/* hero section start */}
       <div
         id="home"
-        className="dark:bg-slate-900 bg-slate-200 flex h-full w-full lg:h-screen"
+        className="flex h-full w-full bg-slate-200 dark:bg-slate-900 lg:h-screen"
       >
         <div
           data-aos="zoom-in-up"
-          className="dark:text-white block w-full space-y-3 px-5 mt-32 mb-32 text-base
-         lg:flex lg:justify-center lg:px-36 lg:flex-col lg:text-2xl"
+          className="mb-32 mt-32 block w-full space-y-3 px-5 text-base dark:text-white
+         lg:flex lg:flex-col lg:justify-center lg:px-36 lg:text-2xl"
         >
           <p className="fade-in">Hello👋...</p>
 
           <h1 className="fade-in text-2xl font-bold lg:text-4xl">
             Frontend{" "}
-            <span className="bg-orange-200 dark:text-white dark:bg-slate-600 transform rotate-3">
+            <span className="rotate-3 transform bg-orange-200 dark:bg-slate-600 dark:text-white">
               Web
             </span>
           </h1>
 
-          <p className="dark:text-orange-500 fade-in text-orange-500 text-sm">
+          <p className="fade-in text-sm text-orange-500 dark:text-orange-500">
             INTRODUCTION
           </p>
 
@@ -50,8 +62,8 @@ const Page = () => {
 
           <Link
             href="#pageDua"
-            className="dark:bg-slate-600 dark:hover:opacity-80 fade-in py-0 dark:text-white bg-orange-200 shadow-sm hover:bg-orange-300 p-1
-            lg:w-44 lg:text-center lg:text-md"
+            className="fade-in lg:text-md bg-orange-200 p-1 py-0 shadow-sm hover:bg-orange-300 dark:bg-slate-600 dark:text-white
+            dark:hover:opacity-80 lg:w-44 lg:text-center"
           >
             Learn More
           </Link>
@@ -62,39 +74,87 @@ const Page = () => {
       {/* service section start */}
       <div
         id="pageDua"
-        className="dark:bg-slate-600 bg-white flex flex-wrap w-full items-center pt-16 pb-16
-        lg:pt-32 lg:pb-32 lg:px-32"
+        className="relative flex w-full flex-wrap items-center bg-white pb-16 pt-16 dark:bg-slate-600
+        lg:px-32 lg:pb-32 lg:pt-32"
       >
-        <div className="dark:text-white fade-in lg:text-2xl w-full px-5 space-y-3">
+        <div className="fade-in w-full space-y-3 px-5 dark:text-white lg:text-2xl">
           <h1
             data-aos="zoom-in-up"
-            className="mx-auto font-bold lg:text-4xl text-2xl mb-8"
+            className="mx-auto mb-8 text-2xl font-bold lg:text-4xl"
           >
             My Services
           </h1>
           <p data-aos="zoom-in-up">Here are some of my services including:</p>
 
-          <div className="lg:grid xl:grid-cols-3 py-16 text-black lg:grid-flow-row lg:gap-12 text-center flex flex-col text-xl">
-            <div
+          <div className="flex flex-col py-16 text-center text-xl text-black lg:grid lg:grid-flow-row lg:gap-12 xl:grid-cols-3">
+            <button
+              onClick={() => {
+                setWeb(!web);
+                setBackBlur(!backBlur);
+              }}
               data-aos="zoom-in-up"
-              className="lg:p-20 mt-3 bg-slate-300 lg:transform lg:hover:rotate-2 w-full lg:rounded-full"
+              className="mt-3 w-full bg-slate-300 lg:transform lg:rounded-full lg:p-20 lg:hover:rotate-2"
             >
               Web Developer
-            </div>
-            <div
+            </button>
+            <button
               data-aos="zoom-in-up"
-              className="lg:p-20 mt-3 bg-slate-300 lg:transform lg:hover:rotate-2 w-full lg:rounded-full"
+              className="mt-3 w-full bg-slate-300 lg:transform lg:rounded-full lg:p-20 lg:hover:rotate-2"
+              onClick={() => {
+                setPrompt(!prompt);
+                setBackBlur(!backBlur);
+              }}
             >
               Prompt Engineer
-            </div>
-            <div
+            </button>
+            <button
               data-aos="zoom-in-up"
-              className="lg:p-20 mt-3 bg-slate-300 lg:transform lg:hover:rotate-2 w-full lg:rounded-full"
+              className="mt-3 w-full bg-slate-300 lg:transform lg:rounded-full lg:p-20 lg:hover:rotate-2"
+              onClick={() => {
+                setUiux(!uiux);
+                setBackBlur(!backBlur);
+              }}
             >
               UI/UX
-            </div>
+            </button>
           </div>
         </div>
+        {web && (
+          <Description
+            backBlur={backBlur}
+            setBackBlur={setBackBlur}
+            web={web}
+            setWeb={setWeb}
+            title={"is Web Devlopment?"}
+            paragraph={
+              "Web development is the process of creating and maintaining a website or web application. It involves using various programming languages, technologies, and tools to create interactive and responsive user experiences on the web."
+            }
+          />
+        )}
+        {prompt && (
+          <Description
+            backBlur={backBlur}
+            setBackBlur={setBackBlur}
+            prompt={prompt}
+            setPrompt={setPrompt}
+            title={"is Prompt Engineer?"}
+            paragraph={
+              "A prompt engineer is a professional responsible for developing and maintaining computer systems or programs designed to provide responses to specific commands or inputs."
+            }
+          />
+        )}
+        {uiux && (
+          <Description
+            backBlur={backBlur}
+            setBackBlur={setBackBlur}
+            uiux={uiux}
+            setUiux={setUiux}
+            title={"is UI/UX?"}
+            paragraph={
+              "A UI/UX designer is a professional who specializes in creating and enhancing the user interface and user experience of digital products. UI (User Interface) design focuses on the visual elements."
+            }
+          />
+        )}
       </div>
       {/* service section end */}
 
@@ -102,13 +162,13 @@ const Page = () => {
 
       {/* portfolio section start*/}
       <div
-        className="dark:bg-slate-600 bg-white flex flex-wrap items-center w-full pb-16 pt-16 text-base
-      lg:pt-32 lg:pb-32 lg:px-32 font-semibold"
+        className="flex w-full flex-wrap items-center bg-white pb-16 pt-16 text-base font-semibold
+      dark:bg-slate-600 lg:px-32 lg:pb-32 lg:pt-32"
       >
-        <div className="dark:text-white fade-in lg:text-2xl w-full px-5">
+        <div className="fade-in w-full px-5 dark:text-white lg:text-2xl">
           <h1
             data-aos="zoom-in-up"
-            className="lg:text-4xl text-2xl font-bold mb-8"
+            className="mb-8 text-2xl font-bold lg:text-4xl"
           >
             My Collection
           </h1>
@@ -118,12 +178,12 @@ const Page = () => {
             Diffusion
           </p>
 
-          <div className="dark:text-black flex flex-wrap px-5 mt-16">
-            <div className="dark:bg-slate-300 bg-orange-200 mt-8 w-full text-base lg:text-lg space-y-2 p-5 rounded-lg shadow-lg lg:w-2/4 lg:scale-75">
+          <div className="mt-16 flex flex-wrap px-5 dark:text-black">
+            <div className="mt-8 w-full space-y-2 rounded-lg bg-orange-200 p-5 text-base shadow-lg dark:bg-slate-300 lg:w-2/4 lg:scale-75 lg:text-lg">
               <Image
                 src={imageSatu}
                 width={200}
-                className="w-full rounded-lg mb-5"
+                className="mb-5 w-full rounded-lg"
                 data-aos="zoom-in-up"
               />
 
@@ -132,11 +192,11 @@ const Page = () => {
                 elegance.
               </p>
             </div>
-            <div className="dark:bg-slate-300 bg-orange-200 mt-8 w-full text-base lg:text-lg space-y-2 p-5 rounded-lg shadow-lg lg:w-2/4 lg:scale-75">
+            <div className="mt-8 w-full space-y-2 rounded-lg bg-orange-200 p-5 text-base shadow-lg dark:bg-slate-300 lg:w-2/4 lg:scale-75 lg:text-lg">
               <Image
                 src={imageEmpat}
                 width={200}
-                className="w-full rounded-lg mb-5"
+                className="mb-5 w-full rounded-lg"
                 data-aos="zoom-in-up"
               />
 
@@ -145,11 +205,11 @@ const Page = () => {
                 sparkling gems, create a mysterious gleam.
               </p>
             </div>
-            <div className="dark:bg-slate-300 bg-orange-200 mt-8 w-full text-base lg:text-lg space-y-2 p-5 rounded-lg shadow-lg lg:w-2/4 lg:scale-75">
+            <div className="mt-8 w-full space-y-2 rounded-lg bg-orange-200 p-5 text-base shadow-lg dark:bg-slate-300 lg:w-2/4 lg:scale-75 lg:text-lg">
               <Image
                 src={imageLima}
                 width={200}
-                className="w-full rounded-lg mb-5"
+                className="mb-5 w-full rounded-lg"
                 data-aos="zoom-in-up"
               />
 
@@ -164,7 +224,7 @@ const Page = () => {
       {/* portfolio section end */}
 
       {/* feedback start */}
-      <div className="bg-slate-200 w-full flex justify-center items-center flex-col">
+      <div className="flex w-full flex-col items-center justify-center bg-slate-200">
         <Form />
       </div>
       {/* feedback end */}

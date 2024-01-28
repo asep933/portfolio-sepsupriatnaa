@@ -1,29 +1,41 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import useSound from "use-sound";
 import { ReactSVG } from "react-svg";
 
 const ButtonMusic = () => {
+  //durasi dalam milidetik 128400
   const [showButton, setShowButton] = useState(true);
   const [playbackRate, setPlaybcakRate] = useState(0);
   const [volume, setVolume] = useState(0.25);
   const [play, { pause }] = useSound("../../musik-latar.mp3", {
     playbackRate,
     volume,
-    soundEnabled: true,
   });
+
+  // useEffect(() => {
+
+  // }, []);
 
   const handlePlay = () => {
     setShowButton(!showButton);
     showButton ? play() : pause();
+
+    if (showButton === true) {
+      setInterval(() => {
+        play();
+      }, 128410);
+    } else {
+      pause();
+    }
   };
 
   return (
     <>
-      <div className="absolute left-9 -top-[2.5px] lg:left-[7.6rem] lg:top-[0.3rem] z-[2222]">
+      <div className="absolute -top-[2.5px] left-9 z-[2222] lg:left-[7.6rem] lg:top-[0.3rem]">
         <button onClick={handlePlay}>
           <ReactSVG
-            className="h-4 absolute lg:scale-110 z-10
+            className="absolute z-10 h-4 lg:scale-110
             "
             src="../../logo-music.svg"
             beforeInjection={(svg) => {
@@ -41,7 +53,7 @@ const ButtonMusic = () => {
           <div
             className={`${
               !showButton ? "scale-0" : "scale-100"
-            } bg-slate-600 p-[1.2px] w-5 -rotate-45 absolute top-[25.8px] -left-[4.5px] lg:-left-[3.8px] transition duration-500 ease-in-out`}
+            } absolute -left-[4.5px] top-[25.8px] w-5 -rotate-45 bg-slate-600 p-[1.2px] transition duration-500 ease-in-out lg:-left-[3.8px]`}
           ></div>
         </button>
       </div>

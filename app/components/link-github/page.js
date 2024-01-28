@@ -6,7 +6,7 @@ import github2 from "/public/github-image-2.png";
 
 const GitHub = () => {
   return (
-    <div className="absolute right-20 lg:right-12 top-[12.5px] lg:pt-[7.4px] lg:pr-3">
+    <div className="absolute right-20 top-[12.5px] lg:right-12 lg:pr-3 lg:pt-[7.4px]">
       <Link
         href="https://github.com/asep933/portfolio-sepsupriatnaa"
         target="_blank"
@@ -29,7 +29,7 @@ const GitHub = () => {
           width="24"
           height="24"
           viewBox="0 0 24 24"
-          className="hover:scale-105 transition duration-300 ease-in-out lg:hidden"
+          className="transition duration-300 ease-in-out hover:scale-105 lg:hidden"
         >
           <path
             fill="rgb(100 116 139)"
@@ -41,7 +41,7 @@ const GitHub = () => {
           width="24"
           height="24"
           viewBox="0 0 24 24"
-          className="hover:scale-105 transition duration-300 ease-in-out lg:block hidden"
+          className="hidden transition duration-300 ease-in-out hover:scale-105 lg:block"
         >
           <path
             fill="rgb(100 116 139)"

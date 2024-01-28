@@ -3,7 +3,7 @@ import Paragraph from "../components/paragraph/page";
 
 const BlogTwo = () => {
   return (
-    <div className="h-auto pt-8 pb-16 px-5 lg:px-32">
+    <div className="h-auto px-5 pb-16 pt-8 lg:px-32">
       <TitleBlog
         title={"Tantangan dan Dampak Negatif Penggunaan Kecerdasan Buatan (AI)"}
       />

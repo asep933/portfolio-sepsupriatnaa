@@ -24,8 +24,8 @@ const Back = () => {
         href="#home"
         className={`${
           show ? "block" : "hidden"
-        } fixed z-[99] rotate-90 transition ease-in-out duration-300 hover:scale-110
-        rounded-full shadow-sm right-4 bottom-16 lg:right-8`}
+        } fixed bottom-16 right-4 z-[99] rotate-90 rounded-full shadow-sm
+        transition duration-300 ease-in-out hover:scale-110 lg:right-8`}
       >
         <Image src={backToTop} alt="back to top image" width={40} />
       </Link>

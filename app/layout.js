@@ -15,7 +15,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="scroll-smooth m-0 overflow-x-hidden">
+    <html lang="en" className="m-0 overflow-x-hidden scroll-smooth">
       <head>
         <link
           rel="icon"
@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body
-        className={`${inter.className} dark:bg-slate-900 overflow-hidden bg-slate-200`}
+        className={`${inter.className} overflow-hidden bg-slate-200 dark:bg-slate-900`}
       >
         <Provider attribute="class">
           <Navbar />

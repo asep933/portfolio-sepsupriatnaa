@@ -28,3 +28,9 @@
 .fade-in {
   animation: fadeInUp 0.4s ease-in-out;
 }
+
+.center-element {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

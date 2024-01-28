@@ -1,16 +1,18 @@
 const Form = () => {
   return (
     <>
-      <div className="dark:bg-slate-900 dark:text-black pt-16 pb-16 fade-in flex items-center
-      flex-col min-w-full lg:pb-32 lg:pt-32">
+      <div
+        className="fade-in flex min-w-full flex-col items-center pb-16 pt-16
+      dark:bg-slate-900 dark:text-black lg:pb-32 lg:pt-32"
+      >
         <h1
           data-aos="zoom-in-up"
-          className="dark:text-white text-2xl font-bold mb-8"
+          className="mb-8 text-2xl font-bold dark:text-white"
         >
           Contact Me
         </h1>
 
-        <form className="dark:text-white flex flex-wrap flex-col mt-0 w-full px-5 text-base lg:translate-x-80 font-semibold">
+        <form className="mt-0 flex w-full flex-col flex-wrap px-5 text-base font-semibold dark:text-white lg:translate-x-80">
           <label data-aos="zoom-in-up" htmlFor="nama">
             Name
           </label>
@@ -18,7 +20,7 @@ const Form = () => {
             data-aos="zoom-in-up"
             name="nama"
             placeholder="Name..."
-            className="dark:bg-slate-100 dark:focus:outline-slate-700 mb-3 mt-1 rounded-sm p-2 font-normal shadow-sm w-full lg:w-2/4 focus:outline-orange-300"
+            className="mb-3 mt-1 w-full rounded-sm p-2 font-normal shadow-sm focus:outline-orange-300 dark:bg-slate-100 dark:focus:outline-slate-700 lg:w-2/4"
           />
 
           <label data-aos="zoom-in-up" htmlFor="email">
@@ -28,7 +30,7 @@ const Form = () => {
             data-aos="zoom-in-up"
             name="email"
             placeholder="Email..."
-            className="dark:bg-slate-100 dark:focus:outline-slate-700 mb-5 mt-1 rounded-sm p-2 font-normal shadow-sm w-full lg:w-2/4 focus:outline-orange-300"
+            className="mb-5 mt-1 w-full rounded-sm p-2 font-normal shadow-sm focus:outline-orange-300 dark:bg-slate-100 dark:focus:outline-slate-700 lg:w-2/4"
           />
 
           <label data-aos="zoom-in-up" htmlFor="pesan">
@@ -39,12 +41,12 @@ const Form = () => {
             placeholder="Message..."
             type="text"
             name="pesan"
-            className="dark:bg-slate-100 dark:focus:outline-slate-700 rounded-sm mt-1 font-normal w-full lg:w-2/4 focus:outline-orange-300 h-40"
+            className="mt-1 h-40 w-full rounded-sm font-normal focus:outline-orange-300 dark:bg-slate-100 dark:focus:outline-slate-700 lg:w-2/4"
           ></textarea>
           <button
             data-aos="zoom-in-up"
             type="submit"
-            className="dark:bg-slate-600 dark:text-white mt-8 bg-orange-200 rounded-lg p-2 w-full shadow-sm hover:opacity-80 lg:w-2/4"
+            className="mt-8 w-full rounded-lg bg-orange-200 p-2 shadow-sm hover:opacity-80 dark:bg-slate-600 dark:text-white lg:w-2/4"
           >
             Submit
           </button>

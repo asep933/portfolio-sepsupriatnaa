@@ -10,19 +10,19 @@ const About = () => {
     With technical expertise and practical experience, Asep Supriatna is ready to carry out web development projects with a focus on quality and efficient solutions. Feel free to reach out via email for further discussions or potential projects.`;
 
   return (
-    <div className="h-screen w-full pt-16 px-5 space-y-10">
-      <div className="dark:text-white fade-in flex items-center flex-wrap lg:flex lg:flex-nowrap">
+    <div className="h-screen w-full space-y-10 px-5 pt-16">
+      <div className="fade-in flex flex-wrap items-center dark:text-white lg:flex lg:flex-nowrap">
         <h1
           data-aos="zoom-in-up"
-          className="dark:text-slate-900 text-2xl font-semibold bg-orange-200 p-2 transform -rotate-2
-                hover:rotate-0 mt-8 lg:mt-24 lg:mr-20 lg:text-4xl lg:ml-20"
+          className="mt-8 -rotate-2 transform bg-orange-200 p-2 text-2xl font-semibold
+                hover:rotate-0 dark:text-slate-900 lg:ml-20 lg:mr-20 lg:mt-24 lg:text-4xl"
         >
           About
         </h1>
 
         <div
           data-aos="zoom-in-up"
-          className="mt-10 lg:pr-60 lg:text-xl lg:mt-24"
+          className="mt-10 lg:mt-24 lg:pr-60 lg:text-xl"
         >
           <DeskripsiAbout aboutProps={isiAbout} />
         </div>

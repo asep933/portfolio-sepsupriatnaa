@@ -1,5 +1,5 @@
 const TitleBlog = ({ title }) => {
-  return <div className="text-2xl font-bold my-12">{title}</div>;
+  return <div className="my-12 text-2xl font-bold">{title}</div>;
 };
 
 export default TitleBlog;

@@ -2,19 +2,19 @@ import Link from "next/link";
 
 const Blog = () => {
   return (
-    <div className="dark:bg-transparent h-screen m-0 flex flex-col pt-16 lg:pt-28">
-      <ul className="dark:text-blue-400 space-y-3 text-xl text-blue-700 font-medium lg:space-y-5">
+    <div className="m-0 flex h-screen flex-col pt-16 dark:bg-transparent lg:pt-28">
+      <ul className="space-y-3 text-xl font-medium text-blue-700 dark:text-blue-400 lg:space-y-5">
         <li>
           <Link
             data-aos="zoom-in-up"
-            className="dark:bg-slate-600 bg-slate-100 block h-40 py-2 px-5 overflow-hidden space-y-3 rounded-sm w-full outline-offset-1 shadow-sm"
+            className="block h-40 w-full space-y-3 overflow-hidden rounded-sm bg-slate-100 px-5 py-2 shadow-sm outline-offset-1 dark:bg-slate-600"
             href="/blog/blog-one"
           >
             <h1 className="hover:underline hover:opacity-80">
               Mengeksplorasi Keuntungan Penggunaan Kecerdasan Buatan (AI) di Era
               Modern
             </h1>
-            <p className="dark:text-white font-normal text-base text-black">
+            <p className="text-base font-normal text-black dark:text-white">
               Kecerdasan Buatan (AI) telah menjadi elemen integral dalam
               transformasi digital di berbagai sektor. Dengan kemampuannya untuk
               memproses data besar, memahami pola kompleks, dan membuat
@@ -27,14 +27,14 @@ const Blog = () => {
         <li>
           <Link
             data-aos="zoom-in-up"
-            className="dark:bg-slate-600 bg-slate-100 block h-40 py-2 px-5 overflow-hidden space-y-3 rounded-sm w-full outline-offset-1 shadow-sm"
+            className="block h-40 w-full space-y-3 overflow-hidden rounded-sm bg-slate-100 px-5 py-2 shadow-sm outline-offset-1 dark:bg-slate-600"
             href={"/blog/blog-two"}
           >
             <h1 className="hover:underline hover:opacity-80">
               Tantangan dan Dampak Negatif Penggunaan Kecerdasan Buatan (AI)
             </h1>
 
-            <p className="dark:text-white font-normal text-base text-black no">
+            <p className="no text-base font-normal text-black dark:text-white">
               Meskipun Kecerdasan Buatan (AI) memberikan banyak keuntungan,
               penting untuk mengakui bahwa ada juga dampak negatif yang perlu
               diperhatikan. Artikel ini akan membahas beberapa tantangan dan

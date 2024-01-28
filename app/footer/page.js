@@ -1,9 +1,9 @@
 const Footer = () => {
   return (
     <div
-      className="dark:text-white dark:bg-transparent dark:pb-2 dark:bg-opacity-10
-     z-[9999999] flex justify-center items-center w-full 
-    bg-green-200 dark:text-center"
+      className="z-[9999999] flex w-full items-center
+     justify-center bg-green-200 dark:bg-transparent dark:bg-opacity-10 dark:pb-2 
+    dark:text-center dark:text-white"
     >
       <p>&copy;sepsupriatnaa | All Right Reserved</p>
     </div>
