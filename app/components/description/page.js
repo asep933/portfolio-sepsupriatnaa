@@ -16,7 +16,7 @@ const Description = ({
     <div className="max-w-full px-5">
       <div
         id="description"
-        className="center-element fixed z-[9999] h-[20rem] w-[18rem] rounded-md
+        className="center-element fixed z-20 h-[20rem] w-[18rem] rounded-md
     bg-slate-300 bg-opacity-75 p-5 shadow-md dark:bg-slate-300 dark:bg-opacity-90 lg:h-[24rem] lg:w-[38rem] lg:px-12 lg:shadow-lg"
       >
         <div className="space-y-3 dark:text-black">
@@ -26,9 +26,10 @@ const Description = ({
                 setWeb(!web);
                 setBackBlur(!backBlur);
               }}
-              className="absolute right-6 top-2 text-3xl transition duration-300 ease-in-out hover:scale-110"
+              className="ease-in-ou absolute right-10 top-5 z-30 mx-auto flex flex-1 flex-row"
             >
-              x
+              <span className="absolute -right-[19.8px] block h-1 w-6 origin-bottom-left rotate-45 rounded-sm bg-slate-600"></span>
+              <span className="absolute -right-[15px] block h-1 w-6 origin-bottom-right -rotate-45 rounded-sm bg-slate-600"></span>
             </button>
           )}
           {prompt && (
@@ -37,9 +38,10 @@ const Description = ({
                 setPrompt(!prompt);
                 setBackBlur(!backBlur);
               }}
-              className="absolute right-6 top-2 text-3xl transition duration-300 ease-in-out hover:scale-110"
+              className="ease-in-ou absolute right-10 top-5 z-30 mx-auto flex flex-1 flex-row"
             >
-              x
+              <span className="absolute -right-[19.8px] block h-1 w-6 origin-bottom-left rotate-45 rounded-sm bg-slate-600"></span>
+              <span className="absolute -right-[15px] block h-1 w-6 origin-bottom-right -rotate-45 rounded-sm bg-slate-600"></span>
             </button>
           )}
           {uiux && (
@@ -48,9 +50,10 @@ const Description = ({
                 setUiux(!uiux);
                 setBackBlur(!backBlur);
               }}
-              className="absolute right-6 top-2 text-3xl transition duration-300 ease-in-out hover:scale-110"
+              className="ease-in-ou absolute right-10 top-5 z-30 mx-auto flex flex-1 flex-row"
             >
-              x
+              <span className="absolute -right-[19.8px] block h-1 w-6 origin-bottom-left rotate-45 rounded-sm bg-slate-600"></span>
+              <span className="absolute -right-[15px] block h-1 w-6 origin-bottom-right -rotate-45 rounded-sm bg-slate-600"></span>
             </button>
           )}
 
@@ -63,5 +66,16 @@ const Description = ({
     </div>
   );
 };
+
+// //button close
+// const ButtonClose = () => {
+//   <>
+//     <div className="z-[9999]">
+//       <button>
+//         <span className="block h-2 w-8 bg-slate-900 p-2"></span>
+//       </button>
+//     </div>
+//   </>;
+// };
 
 export default Description;

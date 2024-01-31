@@ -11,7 +11,7 @@ import imageEmpat from "../public/image_4.png";
 import imageLima from "../public/image_5.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Description from "./components/description/page";
 
 const Page = () => {
@@ -26,10 +26,17 @@ const Page = () => {
 
   return (
     <div>
-      <span></span>
-
       {backBlur && (
-        <div className="fixed z-[9999] h-screen w-full bg-transparent bg-opacity-20 backdrop-blur-sm"></div>
+        <div
+          onClick={() => {
+            setBackBlur(false);
+            setPrompt(false);
+            setWeb(false);
+            setUiux(false);
+          }}
+          id="blur"
+          className="fixed z-10 h-screen w-full bg-transparent bg-opacity-20 backdrop-blur-sm"
+        ></div>
       )}
 
       {/* hero section start */}
@@ -93,13 +100,13 @@ const Page = () => {
                 setBackBlur(!backBlur);
               }}
               data-aos="zoom-in-up"
-              className="mt-3 w-full bg-slate-300 lg:transform lg:rounded-full lg:p-20 lg:hover:rotate-2"
+              className="mt-3 w-full bg-slate-300 hover:bg-opacity-80 lg:transform lg:rounded-full lg:p-20 lg:hover:rotate-2"
             >
               Web Developer
             </button>
             <button
               data-aos="zoom-in-up"
-              className="mt-3 w-full bg-slate-300 lg:transform lg:rounded-full lg:p-20 lg:hover:rotate-2"
+              className="mt-3 w-full bg-slate-300 hover:bg-opacity-80 lg:transform lg:rounded-full lg:p-20 lg:hover:rotate-2"
               onClick={() => {
                 setPrompt(!prompt);
                 setBackBlur(!backBlur);
@@ -109,7 +116,7 @@ const Page = () => {
             </button>
             <button
               data-aos="zoom-in-up"
-              className="mt-3 w-full bg-slate-300 lg:transform lg:rounded-full lg:p-20 lg:hover:rotate-2"
+              className="mt-3 w-full bg-slate-300 hover:bg-opacity-80 lg:transform lg:rounded-full lg:p-20 lg:hover:rotate-2"
               onClick={() => {
                 setUiux(!uiux);
                 setBackBlur(!backBlur);
