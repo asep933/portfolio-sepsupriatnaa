@@ -128,6 +128,14 @@ const Navbar = () => {
             <Link
               onClick={handleClose}
               id="linkMenu"
+              className="hover:text-orange-500 dark:hover:text-slate-900 lg:hidden"
+              href={"/portfolio"}
+            >
+              Portfolio
+            </Link>
+            <Link
+              onClick={handleClose}
+              id="linkMenu"
               className=" hover:text-orange-500 dark:hover:text-slate-900 lg:hidden"
               href={"/blog"}
             >
@@ -138,7 +146,6 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-
         {/* Menu Mobile end */}
 
         {/* Menu Pc Start */}
@@ -163,6 +170,14 @@ const Navbar = () => {
               href={"/about"}
             >
               About
+            </Link>
+            <Link
+              onClick={handleClose}
+              id="linkMenu"
+              className="hover:text-orange-500 dark:hover:text-slate-50"
+              href={"/portfolio"}
+            >
+              Portfolio
             </Link>
             <Link
               onClick={handleClose}
