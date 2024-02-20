@@ -12,7 +12,7 @@ const Form = () => {
           Contact Me
         </h1>
 
-        <form className="mt-0 flex w-full flex-col flex-wrap px-5 text-base font-semibold dark:text-white lg:translate-x-80">
+        <form className="mt-0 flex w-full flex-col flex-wrap px-5 text-base font-semibold dark:text-black lg:translate-x-80">
           <label data-aos="zoom-in-up" htmlFor="nama">
             Name
           </label>
