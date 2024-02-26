@@ -1,7 +1,7 @@
 "use client";
 
-import LogoSepsupriatnaaWhite from "/public/images/sepsupriatnaa_white.png";
-import LogoSepsupriatnaa from "/public/images/favicon.png";
+import LogoSepsupriatnaaWhite from "/public/images/sepsupriatnaa-dark.svg";
+import LogoSepsupriatnaa from "/public/images/sepsupriatnaa-light.svg";
 import Image from "next/image";
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
