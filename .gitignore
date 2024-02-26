@@ -9,8 +9,6 @@
 # testing
 /coverage
 
-*.svg
-
 # next.js
 /.next/
 /out/
