@@ -28,11 +28,19 @@ export default function RootLayout({ children }) {
         className={`${inter.className} overflow-hidden bg-slate-200 dark:bg-slate-900`}
       >
         <Provider attribute="class">
-          <Navbar />
-          <LoadingFirst />
-          <div className="w-full">{children}</div>
-          <Back />
-          <Footer />
+          <header>
+            <Navbar />
+          </header>
+          <section>
+            <LoadingFirst />
+          </section>
+          <main className="w-full">{children}</main>
+          <section>
+            <Back />
+          </section>
+          <footer>
+            <Footer />
+          </footer>
         </Provider>
       </body>
     </html>

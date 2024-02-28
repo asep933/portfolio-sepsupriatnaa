@@ -49,7 +49,7 @@ const Navbar = () => {
   }, [addHumberger, showMenu]);
 
   return (
-    <div>
+    <nav>
       <div
         className="bg-nav shadow-nav fixed z-50 flex
       w-full items-center bg-transparent p-2 backdrop-blur-sm dark:bg-slate-200 dark:bg-opacity-75 lg:justify-between"
@@ -195,7 +195,7 @@ const Navbar = () => {
         </div>
         {/* Menu Pc end */}
       </div>
-    </div>
+    </nav>
   );
 };
 

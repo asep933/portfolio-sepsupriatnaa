@@ -4,6 +4,7 @@ import Image from "next/image";
 const Portfolio = ({ image, alt, title, link }) => {
   return (
     <Link
+      data-aos="zoom-in-up"
       href={`${link}`}
       target="_blank"
       className="mb-6 flex flex-col

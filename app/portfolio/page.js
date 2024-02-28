@@ -5,8 +5,11 @@ import ssCalculator from "/public/ss-calculator.png";
 const page = () => {
   return (
     <div className="h-screen w-full px-5  pt-16 text-lg lg:px-0 lg:pt-20">
-      <h1 className="mb-4 text-xl font-medium lg:mb-0 lg:ml-32 lg:mt-8 lg:text-2xl">
-        List My Portfolio
+      <h1
+        data-aos="zoom-in-up"
+        className="mx-auto mb-8 text-2xl font-bold lg:mb-0 lg:ml-32 lg:mt-8 lg:text-4xl"
+      >
+        Portfolio List
       </h1>
 
       <div className="lg:mx-32 lg:flex ">
