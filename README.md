@@ -1,6 +1,6 @@
 🌟 **Selamat Datang di Repositori Frontend Saya!** 🌟
 
-Hey there! 👋 Saya [Nama Anda], seorang pengembang web dengan hasrat untuk menciptakan pengalaman online yang menakjubkan. 🚀
+Hey there! 👋 Saya Asep Supriatna, seorang pengembang web dengan hasrat untuk menciptakan pengalaman online yang menakjubkan. 🚀
 
 ### 🌐 https://portfolio-sepsupriatnaa.vercel.app/
 
