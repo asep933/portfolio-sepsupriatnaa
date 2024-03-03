@@ -42,11 +42,15 @@ const Page = () => {
       {/* hero section start */}
       <div
         id="home"
-        className="flex h-full w-full bg-slate-200 dark:bg-slate-900 lg:h-screen"
+        className="relative flex h-full w-full space-y-3 bg-slate-200 
+        bg-[url('/bg-space.jpg')] bg-contain bg-fixed bg-no-repeat backdrop-blur-md 
+        dark:bg-slate-900 lg:h-screen lg:bg-transparent lg:bg-[url('/bg-spacelg.jpg')]
+        lg:bg-cover"
       >
+        {/* <div className="hidden lg:absolute lg:h-screen lg:w-full lg:bg-black lg:opacity-60 lg:backdrop-blur-lg"></div> */}
         <div
           data-aos="zoom-in-up"
-          className="mb-32 mt-32 block w-full space-y-3 px-5 text-base dark:text-white
+          className="mb-32 mt-32 block w-full px-5 text-base dark:text-white
          lg:flex lg:flex-col lg:justify-center lg:px-36 lg:text-2xl"
         >
           <p className="fade-in">Hello👋...</p>
