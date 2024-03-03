@@ -43,11 +43,10 @@ const Page = () => {
       <div
         id="home"
         className="relative flex h-full w-full space-y-3 bg-slate-200 
-        bg-[url('/bg-space.jpg')] bg-contain bg-fixed bg-no-repeat backdrop-blur-md 
-        dark:bg-slate-900 lg:h-screen lg:bg-transparent lg:bg-[url('/bg-spacelg.jpg')]
-        lg:bg-cover"
+        bg-contain bg-fixed bg-no-repeat backdrop-blur-md dark:bg-slate-900 dark:bg-[url('/bg-space.jpg')] 
+        sm:dark:bg-[url('/bg-spacelg.jpg')] md:dark:bg-[url('/bg-spacelg.jpg')] lg:h-screen lg:bg-transparent
+        lg:bg-cover lg:dark:bg-[url('/bg-spacelg.jpg')]"
       >
-        {/* <div className="hidden lg:absolute lg:h-screen lg:w-full lg:bg-black lg:opacity-60 lg:backdrop-blur-lg"></div> */}
         <div
           data-aos="zoom-in-up"
           className="mb-32 mt-32 block w-full px-5 text-base dark:text-white
