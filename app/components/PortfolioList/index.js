@@ -12,10 +12,10 @@ const Portfolio = ({ image, alt, title, link }) => {
     >
       <div
         className="flex w-auto flex-col items-center overflow-hidden rounded-xl bg-slate-50
-      dark:bg-slate-700 lg:h-full lg:w-4/5 "
+      dark:bg-slate-700 lg:h-full lg:w-4/5"
       >
         <Image
-          className="object-cover object-center lg:h-3/4"
+          className="object-cover object-center transition duration-300 ease-out hover:scale-110 lg:h-3/4"
           src={image}
           alt={`${alt}`}
           width={3000}

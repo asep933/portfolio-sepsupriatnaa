@@ -105,8 +105,8 @@ const Navbar = () => {
           id="menu"
           className={`${
             showMenu ? "scale-100" : 0
-          } t-10 absolute right-5 top-16 z-20 w-2/4 scale-0 rounded-lg bg-slate-100 p-10 shadow-lg transition duration-500
-              ease-in-out dark:bg-slate-400 dark:text-white lg:right-32 lg:top-0 lg:flex lg:justify-end lg:rounded-none lg:bg-transparent lg:p-0 lg:shadow-none`}
+          } t-10 absolute right-5 top-16 z-20 w-2/4 scale-0 rounded-lg bg-slate-100 bg-opacity-75 p-10 shadow-lg backdrop-blur-md
+              transition duration-500 ease-in-out dark:bg-slate-400 dark:bg-opacity-90 dark:text-white lg:right-32 lg:top-0 lg:flex lg:justify-end lg:rounded-none lg:bg-transparent lg:p-0 lg:shadow-none`}
         >
           <div className="flex flex-col items-center justify-center space-y-4 font-normal lg:mt-3 lg:block lg:translate-x-8 lg:space-x-5">
             <Link
