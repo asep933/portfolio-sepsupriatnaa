@@ -4,15 +4,16 @@ import Link from "next/link";
 import Form from "./components/form/page";
 import Line from "./components/line/page";
 import Contact from "./components/contact/page";
-import imageSatu from "../public/image_1.png";
-import imageDua from "../public/image_2.png";
-import imageTiga from "../public/image_3.png";
 import imageEmpat from "../public/image_4.png";
 import imageLima from "../public/image_5.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useState, useEffect, useRef } from "react";
 import Description from "./components/description/page";
+import Portfolio from "./components/PortfolioList";
+import ssMovie from "/public/ss-movie.png";
+import ssShopStar from "/public/ss-shop-star.png";
+import ssAnime from "/public/ss-animetop.png";
 
 const Page = () => {
   const [web, setWeb] = useState(false);
@@ -43,9 +44,9 @@ const Page = () => {
       <div
         id="home"
         className="relative flex h-full w-full space-y-3 bg-slate-200 
-        bg-contain bg-fixed bg-no-repeat backdrop-blur-md dark:bg-slate-900 dark:bg-[url('/bg-space.jpg')] 
-        sm:dark:bg-[url('/bg-spacelg.jpg')] md:dark:bg-[url('/bg-spacelg.jpg')] lg:h-screen lg:bg-transparent
-        lg:bg-cover lg:dark:bg-[url('/bg-spacelg.jpg')]"
+        bg-contain bg-fixed bg-no-repeat bg-blend-soft-light backdrop-blur-md dark:bg-slate-900 
+        dark:bg-[url('/bg-space.jpg')] sm:dark:bg-[url('/bg-spacelg.jpg')] md:dark:bg-[url('/bg-spacelg.jpg')] lg:h-screen
+        lg:bg-transparent lg:bg-cover lg:dark:bg-[url('/bg-spacelg.jpg')]"
       >
         <div
           data-aos="zoom-in-up"
@@ -180,52 +181,60 @@ const Page = () => {
             data-aos="zoom-in-up"
             className="mb-8 text-2xl font-bold lg:text-4xl"
           >
-            My Collection
+            Portfolio
           </h1>
 
           <p data-aos="zoom-in-up" className="mb-6 font-normal">
-            The following is a list of photos that were generated using Stable
-            Diffusion
+            Below are some of the projects that have been worked on:
           </p>
 
-          <div className="mt-16 flex flex-wrap px-5 dark:text-black">
+          <div className="mt-16 flex flex-wrap px-5 dark:text-white">
             <div className="mt-8 w-full space-y-2 rounded-lg bg-orange-200 p-5 text-base shadow-lg dark:bg-slate-300 lg:w-2/4 lg:scale-75 lg:text-lg">
-              <Image
-                src={imageSatu}
-                width={200}
-                className="mb-5 w-full rounded-lg"
-                data-aos="zoom-in-up"
+              <Portfolio
+                image={ssMovie}
+                alt={"movie ss"}
+                title={"Movie"}
+                link={"https://movie-flash.vercel.app/"}
               />
 
-              <p data-aos="zoom-in-up">
-                A graceful woman is one who carries herself with poise and
-                elegance.
+              <p
+                data-aos="zoom-in-up"
+                className="text-center dark:text-black lg:px-4"
+              >
+                a website with a modern appearance that can search for various
+                kinds of films
               </p>
             </div>
             <div className="mt-8 w-full space-y-2 rounded-lg bg-orange-200 p-5 text-base shadow-lg dark:bg-slate-300 lg:w-2/4 lg:scale-75 lg:text-lg">
-              <Image
-                src={imageEmpat}
-                width={200}
-                className="mb-5 w-full rounded-lg"
-                data-aos="zoom-in-up"
+              <Portfolio
+                image={ssShopStar}
+                alt={"ecommece ss"}
+                title={"ecommerce"}
+                link={"https://ecommerce-shop-star.vercel.app/"}
               />
 
-              <p data-aos="zoom-in-up">
-                Blue-eyed woman with captivating charm. Her eyes, like two
-                sparkling gems, create a mysterious gleam.
+              <p
+                data-aos="zoom-in-up"
+                className="text-center dark:text-black lg:px-4"
+              >
+                a website landing page with a simple appearance, with features
+                order and checkout with fake data
               </p>
             </div>
             <div className="mt-8 w-full space-y-2 rounded-lg bg-orange-200 p-5 text-base shadow-lg dark:bg-slate-300 lg:w-2/4 lg:scale-75 lg:text-lg">
-              <Image
-                src={imageLima}
-                width={200}
-                className="mb-5 w-full rounded-lg"
-                data-aos="zoom-in-up"
+              <Portfolio
+                image={ssAnime}
+                alt={"anime ss"}
+                title={"Anime Top"}
+                link={"https://anime-top-theta.vercel.app/"}
               />
 
-              <p data-aos="zoom-in-up">
-                A cowboy thief, clad in rugged attire, deftly maneuvers through
-                the shadows with a larcenous intent.
+              <p
+                data-aos="zoom-in-up"
+                className="text-center dark:text-black lg:px-4"
+              >
+                a web app where users can search for all anime from the newest
+                to the most popular
               </p>
             </div>
           </div>
