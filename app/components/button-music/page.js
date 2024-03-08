@@ -32,7 +32,7 @@ const ButtonMusic = () => {
 
   return (
     <>
-      <div className="absolute -top-[2.5px] left-9 z-[2222] lg:left-[7.6rem] lg:top-[0.3rem]">
+      <div title="music" className="absolute -top-[2.5px] left-9 z-[2222] lg:left-[7.6rem] lg:top-[0.3rem]">
         <button onClick={handlePlay}>
           <ReactSVG
             className="absolute z-10 h-4 lg:scale-110

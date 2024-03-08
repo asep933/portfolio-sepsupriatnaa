@@ -2,7 +2,10 @@ import Link from "next/link";
 
 const GitHub = () => {
   return (
-    <div className="absolute right-20 top-[12.5px] lg:right-12 lg:pr-3 lg:pt-[7.4px]">
+    <div
+      title="GittHub"
+      className="absolute right-20 top-[12.5px] lg:right-12 lg:pr-3 lg:pt-[7.4px]"
+    >
       <Link href="https://github.com/asep933" target="_blank">
         <svg
           xmlns="http://www.w3.org/2000/svg"
