@@ -1,29 +1,9 @@
-import React from "react";
-import Image from "next/image";
 import Link from "next/link";
-import github from "/public/github-image.png";
-import github2 from "/public/github-image-2.png";
 
 const GitHub = () => {
   return (
     <div className="absolute right-20 top-[12.5px] lg:right-12 lg:pr-3 lg:pt-[7.4px]">
-      <Link
-        href="https://github.com/asep933/portfolio-sepsupriatnaa"
-        target="_blank"
-      >
-        {/* <Image
-          src={github2}
-          alt="image github"
-          width={24}
-          className="hover:scale-105 transition duration-300 ease-in-out lg:block hidden"
-        />
-        <Image
-          src={github2}
-          alt="image github"
-          width={24}
-          className="hover:scale-105 transition duration-300 ease-in-out lg:hidden"
-        /> */}
-
+      <Link href="https://github.com/asep933" target="_blank">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
