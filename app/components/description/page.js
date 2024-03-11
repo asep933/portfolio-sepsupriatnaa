@@ -1,5 +1,7 @@
 "use client";
 
+import { X } from "@phosphor-icons/react";
+
 const Description = ({
   title,
   paragraph,
@@ -13,7 +15,7 @@ const Description = ({
   setBackBlur,
 }) => {
   return (
-    <div className="max-w-full px-5">
+    <div className="relative w-full px-5">
       <div
         id="description"
         className="center-element fixed z-20 h-[20rem] w-[18rem] rounded-md
@@ -26,10 +28,9 @@ const Description = ({
                 setWeb(!web);
                 setBackBlur(!backBlur);
               }}
-              className="ease-in-ou absolute right-10 top-5 z-30 mx-auto flex flex-1 flex-row"
+              className="absolute right-4 top-3 z-30"
             >
-              <span className="absolute -right-[19.8px] block h-1 w-6 origin-bottom-left rotate-45 rounded-sm bg-slate-600"></span>
-              <span className="absolute -right-[15px] block h-1 w-6 origin-bottom-right -rotate-45 rounded-sm bg-slate-600"></span>
+              <X size={32} />
             </button>
           )}
           {prompt && (
@@ -38,10 +39,9 @@ const Description = ({
                 setPrompt(!prompt);
                 setBackBlur(!backBlur);
               }}
-              className="ease-in-ou absolute right-10 top-5 z-30 mx-auto flex flex-1 flex-row"
+              className="absolute right-4 top-3 z-30"
             >
-              <span className="absolute -right-[19.8px] block h-1 w-6 origin-bottom-left rotate-45 rounded-sm bg-slate-600"></span>
-              <span className="absolute -right-[15px] block h-1 w-6 origin-bottom-right -rotate-45 rounded-sm bg-slate-600"></span>
+              <X size={32} />
             </button>
           )}
           {uiux && (
@@ -50,16 +50,15 @@ const Description = ({
                 setUiux(!uiux);
                 setBackBlur(!backBlur);
               }}
-              className="ease-in-ou absolute right-10 top-5 z-30 mx-auto flex flex-1 flex-row"
+              className="absolute right-4 top-3 z-30"
             >
-              <span className="absolute -right-[19.8px] block h-1 w-6 origin-bottom-left rotate-45 rounded-sm bg-slate-600"></span>
-              <span className="absolute -right-[15px] block h-1 w-6 origin-bottom-right -rotate-45 rounded-sm bg-slate-600"></span>
+              <X size={32} />
             </button>
           )}
 
           <div className="lg:space-y-3 lg:pt-16">
             <h1 className=" text-xl font-semibold lg:text-2xl">{title}</h1>
-            <p className="px-4 lg:text-lg">{paragraph}</p>
+            <p className="mt-2 px-4 lg:text-lg">{paragraph}</p>
           </div>
         </div>
       </div>

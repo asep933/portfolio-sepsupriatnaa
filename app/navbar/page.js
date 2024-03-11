@@ -114,7 +114,7 @@ const Navbar = () => {
         >
           <div
             title="Menu"
-            className="flex flex-col items-center justify-center space-y-4 font-normal backdrop-blur-md lg:mt-3 lg:block lg:translate-x-8 lg:space-x-5"
+            className="flex flex-col items-center justify-center space-y-4 font-normal lg:mt-3 lg:block lg:translate-x-8 lg:space-x-5"
           >
             <Link
               onClick={handleClose}

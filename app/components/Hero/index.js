@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Contact from "../contact/page";
 
 const Hero = () => {
   return (
@@ -27,15 +28,17 @@ const Hero = () => {
           INTRODUCTION
         </p>
 
-        <p className="fade-in pb-4">
+        <p className="fade-in">
           I am Asep Supriatna, a programmer with 2 years <br /> experience, My
           expertise includes HTML, CSS, JS, React and Next.
         </p>
 
+        <Contact />
+
         <Link
           href="#pageDua"
-          className="fade-in lg:text-md bg-orange-200 p-1 py-0 shadow-sm hover:bg-orange-300 dark:bg-slate-600 dark:text-white
-            dark:hover:opacity-80 lg:w-44 lg:text-center"
+          className="fade-in lg:text-md bg-orange-200 p-1 py-0 shadow-sm hover:bg-orange-300 dark:bg-slate-600
+            dark:text-white dark:hover:opacity-80 lg:w-44 lg:text-center"
         >
           Learn More
         </Link>

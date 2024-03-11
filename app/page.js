@@ -1,13 +1,11 @@
 "use client";
 
-import Link from "next/link";
 import Form from "./components/form/page";
 import Line from "./components/line/page";
 import Contact from "./components/contact/page";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useState, useEffect, useRef } from "react";
-import Description from "./components/description/page";
+import { useState, useEffect } from "react";
 import PortfolioDashboard from "./components/PorfolioDashboard";
 import Hero from "./components/Hero";
 import Service from "./components/ServiceComponents";
@@ -72,10 +70,6 @@ const Page = () => {
         <Form />
       </div>
       {/* feedback end */}
-
-      {/* contact start */}
-      <Contact />
-      {/* contact end */}
     </div>
   );
 };

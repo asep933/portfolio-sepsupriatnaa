@@ -1,4 +1,31 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
 const Form = () => {
+  const [isSubmit, setIsSubmit] = useState("no submit");
+  const [input, setInput] = useState({
+    name: "",
+    email: "",
+    text: "",
+  });
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsSubmit("no submit");
+    }, 3000);
+  }, [isSubmit]);
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    setIsSubmit("submit");
+    setInput({
+      name: "",
+      email: "",
+      text: "",
+    });
+  };
+
   return (
     <>
       <div
@@ -12,11 +39,16 @@ const Form = () => {
           Contact Me
         </h1>
 
-        <form className="mt-0 flex w-full flex-col flex-wrap px-5 text-base font-semibold dark:text-white lg:translate-x-80">
+        <form
+          onSubmit={handleClick}
+          className="mt-0 flex w-full flex-col flex-wrap px-5 text-base font-semibold dark:text-white lg:translate-x-80"
+        >
           <label data-aos="zoom-in-up" htmlFor="nama">
             Name
           </label>
           <input
+            onChange={(e) => setInput({ name: e.target.value })}
+            value={input.name}
             data-aos="zoom-in-up"
             name="nama"
             placeholder="Name..."
@@ -27,6 +59,8 @@ const Form = () => {
             Email
           </label>
           <input
+            onChange={(e) => setInput({ email: e.target.value })}
+            value={input.email}
             data-aos="zoom-in-up"
             name="email"
             placeholder="Email..."
@@ -37,12 +71,19 @@ const Form = () => {
             Message
           </label>
           <textarea
+            onChange={(e) => setInput({ text: e.target.value })}
+            value={input.text}
             data-aos="zoom-in-up"
             placeholder="Message..."
             type="text"
             name="pesan"
             className="mt-1 h-40 w-full rounded-sm font-normal focus:outline-orange-300 dark:bg-slate-100 dark:text-black dark:focus:outline-slate-700 lg:w-2/4"
           ></textarea>
+
+          {isSubmit === "submit" && (
+            <p className="mt-1 text-green-500">*success sending!</p>
+          )}
+
           <button
             data-aos="zoom-in-up"
             type="submit"

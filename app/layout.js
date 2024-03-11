@@ -5,6 +5,7 @@ import Footer from "./footer/page";
 import Back from "./components/back/page";
 import LoadingFirst from "./first-loading/page";
 import Provider from "./provider/page";
+import LinkWhatsapp from "./components/LinkWhatsapp";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -35,9 +36,10 @@ export default function RootLayout({ children }) {
             <LoadingFirst />
           </section>
           <main className="w-full">{children}</main>
-          <section>
-            <Back />
-          </section>
+
+          <LinkWhatsapp />
+          <Back />
+
           <footer>
             <Footer />
           </footer>

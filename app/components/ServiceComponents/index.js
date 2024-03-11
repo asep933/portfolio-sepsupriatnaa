@@ -1,6 +1,5 @@
-import { Browser } from "@phosphor-icons/react/dist/ssr";
 import Description from "../description/page";
-import { Command, FigmaLogo } from "@phosphor-icons/react";
+import { FigmaLogo, Gear, Stack } from "@phosphor-icons/react";
 
 const Service = ({
   web,
@@ -37,7 +36,7 @@ const Service = ({
             data-aos="zoom-in-up"
             className="mt-3 flex w-full justify-center bg-slate-300 hover:bg-opacity-80 lg:transform lg:rounded-full lg:p-20 lg:hover:rotate-2"
           >
-            <Browser size={32} />
+            <FigmaLogo size={32} />
           </button>
           <button
             title="Prompt AI"
@@ -48,7 +47,7 @@ const Service = ({
               setBackBlur(!backBlur);
             }}
           >
-            <Command size={32} />
+            <Gear size={32} />
           </button>
           <button
             title="Ui/Ux"
@@ -59,7 +58,7 @@ const Service = ({
               setBackBlur(!backBlur);
             }}
           >
-            <FigmaLogo size={32} />
+            <Stack size={32} />
           </button>
         </div>
       </div>
@@ -69,9 +68,9 @@ const Service = ({
           setBackBlur={setBackBlur}
           web={web}
           setWeb={setWeb}
-          title={"is Web Devlopment?"}
+          title={"is Web Frontend?"}
           paragraph={
-            "Web development is the process of creating and maintaining a website or web application. It involves using various programming languages, technologies, and tools to create interactive and responsive user experiences on the web."
+            "Frontend development typically includes working with HTML, CSS, and JavaScript to create responsive and interactive elements that users can engage with. It focuses on how the application looks and feels."
           }
         />
       )}
@@ -81,9 +80,9 @@ const Service = ({
           setBackBlur={setBackBlur}
           prompt={prompt}
           setPrompt={setPrompt}
-          title={"is Prompt Engineer?"}
+          title={"is Web Backend?"}
           paragraph={
-            "A prompt engineer is a professional responsible for developing and maintaining computer systems or programs designed to provide responses to specific commands or inputs."
+            "Backend, on the other hand, is the server-side of a software application or website. It involves managing and processing data, ensuring the functionality and logic behind the scenes."
           }
         />
       )}
@@ -93,9 +92,9 @@ const Service = ({
           setBackBlur={setBackBlur}
           uiux={uiux}
           setUiux={setUiux}
-          title={"is UI/UX?"}
+          title={"is Web Fullstack?"}
           paragraph={
-            "A UI/UX designer is a professional who specializes in creating and enhancing the user interface and user experience of digital products. UI (User Interface) design focuses on the visual elements."
+            "Fullstack development involves working on both the frontend and backend of a software application, covering the entire development stack."
           }
         />
       )}
