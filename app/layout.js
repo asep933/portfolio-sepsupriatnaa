@@ -12,11 +12,15 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "sepsupriatnaa",
   description: "Portfolio sepsupriatnaa",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="m-0 overflow-x-hidden scroll-smooth">
+    <html lang="en" className="m-0 resize-none overflow-x-hidden scroll-smooth">
       <head>
         <link
           rel="icon"
@@ -26,7 +30,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body
-        className={`${inter.className} overflow-hidden bg-slate-200 dark:bg-slate-900`}
+        className={`${inter.className} bg-primary overflow-hidden dark:bg-slate-900`}
       >
         <Provider attribute="class">
           <header>

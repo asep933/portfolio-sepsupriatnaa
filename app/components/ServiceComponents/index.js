@@ -14,34 +14,47 @@ const Service = ({
   return (
     <div
       id="pageDua"
-      className="relative flex w-full flex-wrap items-center bg-white pb-16 pt-16 dark:bg-slate-600
+      className="relative flex w-full flex-wrap items-center bg-fourth pb-16 pt-16 dark:bg-slate-600
         lg:px-32 lg:pb-32 lg:pt-32"
     >
       <div className="fade-in w-full space-y-3 px-5 dark:text-white lg:text-2xl">
         <h1
-          data-aos="zoom-in-up"
-          className="mx-auto mb-8 text-2xl font-bold lg:text-4xl"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          className="mx-auto mb-8 text-2xl font-bold text-primary lg:text-4xl"
         >
           My Services
         </h1>
-        <p data-aos="zoom-in-up">Here are some of my services including:</p>
+        <p
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          className="text-primary"
+        >
+          Here are some of my services including:
+        </p>
 
         <div className="flex flex-col py-16 text-center text-xl text-black lg:grid lg:grid-flow-row lg:gap-12 xl:grid-cols-3">
           <button
-            title="Web Development"
+            title="Frontend"
             onClick={() => {
               setWeb(!web);
               setBackBlur(!backBlur);
             }}
             data-aos="zoom-in-up"
-            className="mt-3 flex w-full justify-center bg-slate-300 hover:bg-opacity-80 lg:transform lg:rounded-full lg:p-20 lg:hover:rotate-2"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            className="mt-3 flex w-full justify-center bg-primary transition duration-300 ease-in-out hover:bg-opacity-80 lg:transform lg:rounded-full lg:p-20 lg:hover:rotate-2"
           >
             <FigmaLogo size={32} />
           </button>
           <button
-            title="Prompt AI"
+            title="Backend"
             data-aos="zoom-in-up"
-            className="mt-3 flex w-full justify-center bg-slate-300 hover:bg-opacity-80 lg:transform lg:rounded-full lg:p-20 lg:hover:rotate-2"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            className="mt-3 flex w-full justify-center bg-primary transition duration-300 ease-in-out hover:bg-opacity-80 lg:transform lg:rounded-full lg:p-20 lg:hover:rotate-2"
             onClick={() => {
               setPrompt(!prompt);
               setBackBlur(!backBlur);
@@ -50,9 +63,11 @@ const Service = ({
             <Gear size={32} />
           </button>
           <button
-            title="Ui/Ux"
+            title="Fullstack"
             data-aos="zoom-in-up"
-            className="mt-3 flex w-full justify-center bg-slate-300 hover:bg-opacity-80 lg:transform lg:rounded-full lg:p-20 lg:hover:rotate-2"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            className="mt-3 flex w-full justify-center bg-primary transition duration-300 ease-in-out hover:bg-opacity-80 lg:transform lg:rounded-full lg:p-20 lg:hover:rotate-2"
             onClick={() => {
               setUiux(!uiux);
               setBackBlur(!backBlur);

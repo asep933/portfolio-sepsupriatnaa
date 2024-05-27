@@ -18,8 +18,8 @@ const Description = ({
     <div className="relative w-full px-5">
       <div
         id="description"
-        className="center-element fixed z-20 h-[20rem] w-[18rem] rounded-md
-    bg-slate-300 bg-opacity-75 p-5 shadow-md dark:bg-slate-300 dark:bg-opacity-90 lg:h-[24rem] lg:w-[38rem] lg:px-12 lg:shadow-lg"
+        className="center-element bg-primary fixed z-20 h-[20rem] w-[18rem]
+    rounded-md bg-opacity-75 p-5 shadow-md dark:bg-slate-300 dark:bg-opacity-90 lg:h-[24rem] lg:w-[38rem] lg:px-12 lg:shadow-lg"
       >
         <div className="space-y-3 dark:text-black">
           {web && (

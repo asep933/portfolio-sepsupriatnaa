@@ -4,12 +4,12 @@ import blogOne from "/public/blog/blog-one.jpg";
 
 const Blog = () => {
   return (
-    <div className="m-0 flex h-screen flex-col pt-16 dark:bg-transparent lg:pt-28">
+    <div className="m-0 flex h-screen flex-col pt-24 dark:bg-transparent lg:pt-28">
       <ul className="space-y-3 text-xl font-medium text-blue-700 dark:text-blue-400 lg:space-y-5">
         <li>
           <Link
             data-aos="zoom-in-up"
-            className="block h-40 w-full space-y-3 overflow-hidden rounded-sm bg-slate-100 px-5 py-2 shadow-sm outline-offset-1 dark:bg-slate-600"
+            className="block h-40 w-full space-y-3 overflow-hidden rounded-sm bg-secondary px-4 py-2 shadow-sm outline-offset-1 dark:bg-slate-600 lg:px-48"
             href="/blog/blog-one"
           >
             {/* <Image src={blogOne} alt="blog image" width={300} /> */}
@@ -31,7 +31,7 @@ const Blog = () => {
         <li>
           <Link
             data-aos="zoom-in-up"
-            className="block h-40 w-full space-y-3 overflow-hidden rounded-sm bg-slate-100 px-5 py-2 shadow-sm outline-offset-1 dark:bg-slate-600"
+            className="block h-40 w-full space-y-3 overflow-hidden rounded-sm bg-secondary px-4 py-2 shadow-sm outline-offset-1 dark:bg-slate-600 lg:px-48"
             href={"/blog/blog-two"}
           >
             <h1 className="hover:underline hover:opacity-80">

@@ -1,48 +1,28 @@
-import Link from "next/link";
-import Contact from "../contact/page";
+import Info from "./Info";
+import Photo from "./ImageHero";
+import Aksen from "@/public/aksen-hero.png";
+import Image from "next/image";
 
 const Hero = () => {
   return (
     <div
       id="home"
-      className="relative flex h-full w-full space-y-3 bg-slate-200 
-        bg-contain bg-fixed bg-no-repeat bg-blend-soft-light backdrop-blur-md dark:bg-slate-900 
-        dark:bg-[url('/bg-space.jpg')] sm:dark:bg-[url('/bg-spacelg.jpg')] md:dark:bg-[url('/bg-spacelg.jpg')] lg:h-screen
-        lg:bg-transparent lg:bg-cover lg:dark:bg-[url('/bg-spacelg.jpg')]"
+      className="relative flex h-[36rem] w-full items-center justify-center overflow-hidden bg-[url('/bg-hero.png')] bg-cover
+        bg-no-repeat pt-28 backdrop-blur-md dark:bg-slate-900 dark:bg-[url('/bg-space.jpg')] max-[820px]:h-auto
+        max-[820px]:flex-col-reverse max-[820px]:items-center sm:dark:bg-[url('/bg-spacelg.jpg')]
+        md:dark:bg-[url('/bg-spacelg.jpg')] lg:bg-transparent lg:pt-0 lg:dark:bg-[url('/bg-spacelg.jpg')]"
     >
-      <div
-        data-aos="zoom-in-up"
-        className="mb-32 mt-32 block w-full px-5 text-base dark:text-white
-         lg:flex lg:flex-col lg:justify-center lg:px-36 lg:text-2xl"
-      >
-        <p className="fade-in">Hello👋...</p>
-
-        <h1 className="fade-in text-2xl font-bold lg:text-4xl">
-          Frontend{" "}
-          <span className="rotate-3 transform bg-orange-200 dark:bg-slate-600 dark:text-white">
-            Web
-          </span>
-        </h1>
-
-        <p className="fade-in text-sm text-orange-500 dark:text-orange-500">
-          INTRODUCTION
-        </p>
-
-        <p className="fade-in">
-          I am Asep Supriatna, a programmer with 2 years <br /> experience, My
-          expertise includes HTML, CSS, JS, React and Next.
-        </p>
-
-        <Contact />
-
-        <Link
-          href="#pageDua"
-          className="fade-in lg:text-md bg-orange-200 p-1 py-0 shadow-sm hover:bg-orange-300 dark:bg-slate-600
-            dark:text-white dark:hover:opacity-80 lg:w-44 lg:text-center"
-        >
-          Learn More
-        </Link>
+      <div className="flex flex-col-reverse px-4 lg:flex-row lg:justify-around">
+        <Photo />
+        <Info />
       </div>
+
+      <img
+        src="../../aksen-hero.png"
+        alt="aksen hero"
+        width="340"
+        className="absolute bottom-5 right-1 z-[999999999999999] animate-bounce transition duration-1000 ease-out"
+      />
     </div>
   );
 };

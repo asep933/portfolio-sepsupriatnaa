@@ -27,23 +27,23 @@ const Form = () => {
   };
 
   return (
-    <>
+    <div className="w-full items-center justify-center">
       <div
-        className="fade-in flex min-w-full flex-col items-center pb-16 pt-16
-      dark:bg-slate-900 dark:text-black lg:pb-32 lg:pt-32"
+        className="flex min-w-full flex-col items-center justify-center py-28
+      dark:bg-slate-900 dark:text-black lg:pb-48 lg:pt-48"
       >
         <h1
           data-aos="zoom-in-up"
-          className="mb-8 text-2xl font-bold dark:text-white"
+          className="mb-8 text-2xl font-bold text-primary dark:text-white"
         >
           Contact Me
         </h1>
 
         <form
           onSubmit={handleClick}
-          className="mt-0 flex w-full flex-col flex-wrap px-5 text-base font-semibold dark:text-white lg:translate-x-80"
+          className="mt-0 flex w-full flex-col flex-wrap px-5 text-base font-semibold dark:text-white lg:px-[24rem]"
         >
-          <label data-aos="zoom-in-up" htmlFor="nama">
+          <label data-aos="zoom-in-up" htmlFor="nama" className="text-primary">
             Name
           </label>
           <input
@@ -52,10 +52,10 @@ const Form = () => {
             data-aos="zoom-in-up"
             name="nama"
             placeholder="Name..."
-            className="mb-3 mt-1 w-full rounded-sm p-2 font-normal shadow-sm focus:outline-orange-300 dark:bg-slate-100 dark:text-black dark:focus:outline-slate-700 lg:w-2/4"
+            className="mb-3 mt-1 w-full rounded-sm p-2 font-normal shadow-sm focus:outline-third dark:bg-slate-100 dark:text-black dark:focus:outline-slate-700"
           />
 
-          <label data-aos="zoom-in-up" htmlFor="email">
+          <label data-aos="zoom-in-up" htmlFor="email" className="text-primary">
             Email
           </label>
           <input
@@ -64,10 +64,10 @@ const Form = () => {
             data-aos="zoom-in-up"
             name="email"
             placeholder="Email..."
-            className="mb-5 mt-1 w-full rounded-sm p-2 font-normal shadow-sm focus:outline-orange-300 dark:bg-slate-100 dark:text-black dark:focus:outline-slate-700 lg:w-2/4"
+            className="mb-5 mt-1 w-full rounded-sm p-2 font-normal shadow-sm focus:outline-third dark:bg-slate-100 dark:text-black dark:focus:outline-slate-700"
           />
 
-          <label data-aos="zoom-in-up" htmlFor="pesan">
+          <label data-aos="zoom-in-up" htmlFor="pesan" className="text-primary">
             Message
           </label>
           <textarea
@@ -77,7 +77,7 @@ const Form = () => {
             placeholder="Message..."
             type="text"
             name="pesan"
-            className="mt-1 h-40 w-full rounded-sm font-normal focus:outline-orange-300 dark:bg-slate-100 dark:text-black dark:focus:outline-slate-700 lg:w-2/4"
+            className="mt-1 h-40 w-full rounded-sm font-normal focus:outline-third dark:bg-slate-100 dark:text-black dark:focus:outline-slate-700"
           ></textarea>
 
           {isSubmit === "submit" && (
@@ -87,13 +87,13 @@ const Form = () => {
           <button
             data-aos="zoom-in-up"
             type="submit"
-            className="mt-8 w-full rounded-lg bg-orange-200 p-2 shadow-sm hover:opacity-80 dark:bg-slate-600 dark:text-white lg:w-2/4"
+            className="mt-8 w-full rounded-lg bg-third p-2 shadow-sm hover:opacity-80 dark:bg-slate-600 dark:text-white"
           >
             Submit
           </button>
         </form>
       </div>
-    </>
+    </div>
   );
 };
 

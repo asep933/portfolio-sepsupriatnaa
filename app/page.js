@@ -17,7 +17,10 @@ const Page = () => {
   const [backBlur, setBackBlur] = useState(false);
 
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      duration: "1000",
+      easing: "ease-in-out",
+    });
   }, []);
 
   return (
@@ -56,7 +59,7 @@ const Page = () => {
 
       {/* portfolio section start*/}
       <div
-        className="flex w-full flex-wrap items-center bg-white pb-16 pt-16 text-base font-semibold
+        className="flex w-full flex-wrap items-center pb-16 pt-16 text-base font-semibold
       dark:bg-slate-600 lg:px-32 lg:pb-32 lg:pt-32"
       >
         <div className="fade-in w-full px-5 dark:text-white lg:text-2xl">
@@ -66,7 +69,7 @@ const Page = () => {
       {/* portfolio section end */}
 
       {/* feedback start */}
-      <div className="flex w-full flex-col items-center justify-center bg-slate-200">
+      <div className="bg-fourth flex w-full flex-col items-center justify-center">
         <Form />
       </div>
       {/* feedback end */}

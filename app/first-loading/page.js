@@ -23,7 +23,7 @@ const LoadingFirst = () => {
           className={`${
             theme === "dark" ? "dark:bg-slate-900" : 0
           } fixed z-[999999] flex h-screen w-full items-center justify-center overflow-hidden
-           bg-slate-100`}
+           bg-primary`}
         >
           <div className="animate-spin">
             {theme === "light" ? (

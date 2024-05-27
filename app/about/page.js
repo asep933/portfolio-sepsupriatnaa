@@ -14,7 +14,7 @@ const About = () => {
       <div className="fade-in flex flex-wrap items-center dark:text-white lg:flex lg:flex-nowrap">
         <h1
           data-aos="zoom-in-up"
-          className="mt-8 -rotate-2 transform bg-orange-200 p-2 text-2xl font-semibold
+          className="bg-third mt-8 -rotate-2 transform p-2 text-2xl font-semibold
                 hover:rotate-0 dark:text-slate-900 lg:ml-20 lg:mr-20 lg:mt-24 lg:text-4xl"
         >
           About

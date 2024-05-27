@@ -7,11 +7,11 @@
 }
 
 .humberger-line {
-  @apply block h-[2px] w-[18px] bg-slate-500 rounded-sm;
+  @apply block h-[2px] w-[18px] rounded-sm bg-slate-500;
 }
 
 .bg-nav {
-  background-color: rgb(255, 191, 219, 0.4);
+  @apply bg-opacity-75;
 }
 
 @keyframes fadeInUp {

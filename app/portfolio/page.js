@@ -3,10 +3,11 @@ import ssAnime from "/public/ss-animetop.png";
 import ssCalculator from "/public/ss-calculator.png";
 import ssShopStar from "/public/ss-shop-star.png";
 import ssMovie from "/public/ss-movie.png";
+import ssBatik from "/public/batik-1.PNG";
 
 const page = () => {
   return (
-    <div className="h-auto w-full px-5 pt-16  text-lg lg:h-auto lg:px-0 lg:pb-16 lg:pt-20">
+    <div className="h-auto w-full px-5 pt-16  text-lg lg:h-auto lg:px-0 lg:pb-36 lg:pt-20">
       <h1
         data-aos="zoom-in-up"
         className="mx-auto mb-8 text-2xl font-bold lg:mb-0 lg:ml-32 lg:mt-8 lg:text-4xl"
@@ -22,6 +23,12 @@ const page = () => {
           link={"https://anime-top-theta.vercel.app/"}
         />
 
+        <Portfolio
+          image={ssBatik}
+          alt={"batik ss"}
+          title={"Batik Nasional"}
+          link={"https://batik-sandy.vercel.app/"}
+        />
         <Portfolio
           image={ssCalculator}
           alt={"calculator ss"}
