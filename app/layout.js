@@ -12,10 +12,10 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "sepsupriatnaa",
   description: "Portfolio sepsupriatnaa",
-  width: "device-width",
-  initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
+  // width: "device-width",
+  // initialScale: 1,
+  // maximumScale: 1,
+  // userScalable: false,
 };
 
 export default function RootLayout({ children }) {
@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body
-        className={`${inter.className} bg-primary overflow-hidden dark:bg-slate-900`}
+        className={`${inter.className} overflow-hidden bg-primary dark:bg-slate-900`}
       >
         <Provider attribute="class">
           <header>

@@ -1,7 +1,7 @@
 "use client";
 
 import { Bebas_Neue } from "next/font/google";
-import { useState, useEffect } from "react";
+import { useState, useEffect, use } from "react";
 import GitHub from "../components/link-github/page";
 import ButtonMusic from "../components/button-music/page";
 import Logo from "../components/Logo";
@@ -18,6 +18,18 @@ const bebas_neue = Bebas_Neue({
 const Navbar = () => {
   const [addHumberger, setAddHumberger] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
+  const [scrollTop, setScrollTop] = useState(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+    return  setScrollTop(document.documentElement.scrollTop);
+    
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [scrollTop]);
 
   const handleAnimate = () => {
     setAddHumberger(!addHumberger);
@@ -54,8 +66,8 @@ const Navbar = () => {
   return (
     <nav>
       <div
-        className="bg-nav shadow-nav fixed z-50 w-full bg-transparent
-        backdrop-blur-sm dark:bg-slate-200 dark:bg-opacity-75"
+        className={`${scrollTop > 30 ? "bg-nav" : ""} shadow-nav fixed z-50 w-full dark:bg-slate-200 
+        dark:bg-opacity-75`}
       >
         <div className="flex w-full items-center justify-around">
           <div className="flex items-center gap-3 max-[820px]:gap-1">
