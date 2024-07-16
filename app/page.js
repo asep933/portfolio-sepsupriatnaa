@@ -1,8 +1,7 @@
 "use client";
 
-import Form from "./components/form/page";
+import Form from "./components/form";
 import Line from "./components/line/page";
-import Contact from "./components/contact/page";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useState, useEffect } from "react";
