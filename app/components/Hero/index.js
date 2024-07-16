@@ -1,7 +1,4 @@
 import Info from "./Info";
-import Photo from "./ImageHero";
-import Aksen from "@/public/aksen-hero.png";
-import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -12,8 +9,10 @@ const Hero = () => {
         max-[820px]:items-center sm:dark:bg-[url('/bg-spacelg.jpg')] md:dark:bg-[url('/bg-spacelg.jpg')]
         lg:h-[36rem] lg:bg-transparent lg:dark:bg-[url('/bg-spacelg.jpg')]"
     >
-      <div className="flex flex-col-reverse justify-normal overflow-hidden px-4 pt-[8rem] sm:pt-[10rem] md:pt-[12rem] lg:flex-row lg:justify-around lg:pt-0">
-        <Photo />
+      <div
+        className="flex flex-col-reverse justify-normal overflow-hidden px-4 pt-[8rem] 
+        sm:pt-[10rem] md:pt-[12rem] lg:flex-row lg:justify-around lg:pt-0"
+      >
         <Info />
       </div>
 
