@@ -1,8 +1,7 @@
 "use client";
 
 import { Bebas_Neue } from "next/font/google";
-import { useState, useEffect, use } from "react";
-import GitHub from "../components/link-github/page";
+import { useState, useEffect } from "react";
 import ButtonMusic from "../components/button-music/page";
 import Logo from "../components/Logo";
 import Humberger from "../components/Humberger";
@@ -20,16 +19,15 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [scrollTop, setScrollTop] = useState(null);
 
-  useEffect(() => {
-    const handleScroll = () => {
-    return  setScrollTop(document.documentElement.scrollTop);
-    
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     return setScrollTop(document.documentElement.scrollTop);
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
+  //   window.addEventListener("scroll", handleScroll);
 
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [scrollTop]);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, [scrollTop]);
 
   const handleAnimate = () => {
     setAddHumberger(!addHumberger);
@@ -66,7 +64,7 @@ const Navbar = () => {
   return (
     <nav>
       <div
-        className={`${scrollTop > 30 ? "bg-nav" : ""} shadow-nav fixed z-50 w-full dark:bg-slate-200 
+        className={`bg-nav shadow-nav fixed z-50 w-full text-primary backdrop-blur-md dark:bg-slate-200 
         dark:bg-opacity-75`}
       >
         <div className="flex w-full items-center justify-around">
@@ -91,10 +89,6 @@ const Navbar = () => {
             {/* Menu Pc Start */}
             <MenuPc handleClose={handleClose} />
             {/* Menu Pc end */}
-
-            {/* Link ke GitHub start */}
-            <GitHub />
-            {/* Link ke GitHub end */}
           </div>
         </div>
         {/* Menu Mobile start */}

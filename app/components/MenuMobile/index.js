@@ -7,7 +7,7 @@ const MenuMobile = ({ showMenu, handleClose }) => {
       <div
         className={`${
           showMenu ? "scale-100" : 0
-        } t-10 absolute right-5 top-16 z-20 w-1/2 scale-0 rounded-lg bg-primary bg-opacity-90 p-10 shadow-lg backdrop-blur-md
+        } t-10 absolute right-5 top-16 z-20 w-1/2 scale-0 rounded-lg bg-white bg-opacity-90 p-10 shadow-lg backdrop-blur-md
               transition duration-500 ease-in-out dark:bg-slate-400 dark:bg-opacity-90 dark:text-white lg:right-32 lg:top-0 lg:flex 
               lg:justify-end lg:rounded-none lg:bg-transparent lg:p-0 lg:shadow-none`}
       >

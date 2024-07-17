@@ -13,7 +13,7 @@ const Contact = () => {
   const [github, setGithub] = useState(false);
 
   return (
-    <div className="mb-3 mt-2 flex gap-2 lg:mb-6 lg:ml-1">
+    <div className="mb-3 mt-2 flex flex-row items-center gap-3 lg:mb-6 lg:ml-1">
       <Link
         href={"https://www.linkedin.com/in/sepsupriatnaa/"}
         target="_blank"
@@ -22,32 +22,27 @@ const Contact = () => {
       >
         <div className="lg:scale-125">
           {linkedin ? (
-            <Image src={linkedIn} alt="linkedin icon" width={24} />
+            <Image src={linkedIn} alt="linkedin icon" width={20} />
           ) : (
-            <Image src={linkedInWhite} alt="linkedin white icon" width={24} />
+            <Image src={linkedInWhite} alt="linkedin white icon" width={20} />
           )}
         </div>
       </Link>
 
-      {/* <Link
-        href={"https://www.linkedin.com/in/sepsupriatnaa/"}
+      <Link
+        href={"https://github.com/asep933"}
         target="_blank"
         onMouseOver={() => setGithub(true)}
         onMouseOut={() => setGithub(false)}
       >
         <div>
           {github ? (
-            <Image
-              src={linkGithub}
-              alt="linkedin icon"
-              width={24}
-              className="dark:hidden"
-            />
+            <Image src={linkGithub} alt="linkedin icon" width={28} />
           ) : (
-            <Image src={linkGithubWhite} alt="linkedin white icon" width={24} />
+            <Image src={linkGithubWhite} alt="linkedin white icon" width={28} />
           )}
         </div>
-      </Link> */}
+      </Link>
     </div>
   );
 };

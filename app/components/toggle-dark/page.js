@@ -27,7 +27,7 @@ const ToggleDark = () => {
           }
         }}
       >
-        <div className="relative ml-2 flex w-[32px] items-center rounded-md bg-third p-1 dark:bg-slate-200">
+        <div className="relative ml-2 flex w-[32px] items-center rounded-md bg-primary p-1 dark:bg-slate-200">
           <span
             className={`absolute left-0 h-1 w-1 rounded-full bg-secondary p-[8px] transition duration-300 ease-in-out dark:bg-slate-500 ${
               theme === "dark" ? "translate-x-[16px]" : ""

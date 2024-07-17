@@ -1,7 +1,6 @@
 "use client";
 
 import Form from "./components/form";
-import Line from "./components/line/page";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useState, useEffect } from "react";
@@ -54,8 +53,6 @@ const Page = () => {
       />
       {/* service section end */}
 
-      <Line />
-
       {/* portfolio section start*/}
       <div
         className="flex w-full flex-wrap items-center pb-16 pt-16 text-base font-semibold
@@ -68,7 +65,7 @@ const Page = () => {
       {/* portfolio section end */}
 
       {/* feedback start */}
-      <div className="bg-fourth flex w-full flex-col items-center justify-center">
+      <div className="radius-form flex w-full flex-col items-center justify-center bg-fourth">
         <Form />
       </div>
       {/* feedback end */}

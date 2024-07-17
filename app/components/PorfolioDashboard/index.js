@@ -2,11 +2,12 @@ import Portfolio from "../PortfolioList";
 import ssMovie from "/public/ss-movie.png";
 import ssBatik from "/public/batik-1.PNG";
 import ssAnime from "/public/ss-animetop.png";
+import ssMemor from "/public/memor-ease.png";
 
 const PortfolioDashboard = () => {
   return (
     <>
-      <div className="mt-16 px-5 dark:text-white">
+      <div className="flex flex-col gap-3 px-5 dark:text-white lg:gap-6">
         <div>
           <h1
             data-aos="zoom-in-up"
@@ -27,55 +28,34 @@ const PortfolioDashboard = () => {
           </p>
         </div>
 
-        <div className="flex flex-wrap lg:grid lg:grid-cols-2">
-          <div className="mt-8 w-full space-y-2 rounded-lg bg-third p-5 text-base shadow-lg transition duration-300 ease-in-out hover:bg-fourth dark:bg-slate-300 lg:scale-75 lg:text-lg">
-            <Portfolio
-              image={ssMovie}
-              alt={"movie ss"}
-              title={"Movie"}
-              link={"https://movie-flash.vercel.app/"}
-            />
+        <div className="flex flex-wrap gap-6 lg:grid lg:grid-cols-2 lg:gap-8">
+          <Portfolio
+            image={ssBatik}
+            alt={"batik ss"}
+            title={"Batik Nasional"}
+            link={"https://batik-sandy.vercel.app/"}
+          />
 
-            <p
-              data-aos="zoom-in-up"
-              className="text-center dark:text-black lg:px-4"
-            >
-              a website with a modern appearance that can search for various
-              kinds of films
-            </p>
-          </div>
-          <div className="mt-8 w-full space-y-2 rounded-lg bg-third p-5 text-base shadow-lg transition duration-300 ease-in-out hover:bg-fourth dark:bg-slate-300 lg:scale-75 lg:text-lg">
-            <Portfolio
-              image={ssAnime}
-              alt={"anime ss"}
-              title={"Anime Top"}
-              link={"https://anime-top-theta.vercel.app/"}
-            />
+          <Portfolio
+            image={ssMemor}
+            alt={"memor ease ss"}
+            title={"Memor Ease"}
+            link={"https://memor-ease.vercel.app/"}
+          />
 
-            <p
-              data-aos="zoom-in-up"
-              className="text-center dark:text-black lg:px-4"
-            >
-              a web app where users can search for all anime from the newest to
-              the most popular
-            </p>
-          </div>
-          <div className="mt-8 w-full space-y-2 rounded-lg bg-third p-5 text-base shadow-lg transition duration-300 ease-in-out hover:bg-fourth dark:bg-slate-300 lg:scale-75 lg:text-lg">
-            <Portfolio
-              image={ssBatik}
-              alt={"batik ss"}
-              title={"Batik Nasional"}
-              link={"https://batik-sandy.vercel.app/"}
-            />
+          <Portfolio
+            image={ssMovie}
+            alt={"movie ss"}
+            title={"Movie"}
+            link={"https://movie-flash.vercel.app/"}
+          />
 
-            <p
-              data-aos="zoom-in-up"
-              className="text-center dark:text-black lg:px-4"
-            >
-              a website landing page with a simple appearance, with features
-              order and order.
-            </p>
-          </div>
+          <Portfolio
+            image={ssAnime}
+            alt={"anime ss"}
+            title={"Anime Top"}
+            link={"https://anime-top-theta.vercel.app/"}
+          />
         </div>
       </div>
     </>
