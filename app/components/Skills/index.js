@@ -1,3 +1,5 @@
+"use client";
+
 import Icon from "../Icons/Icon";
 import Html from "/public/html.svg";
 import Css from "/public/css.svg";
@@ -6,12 +8,15 @@ import React_ from "/public/react.svg";
 import Laravel from "/public/laravel.svg";
 import Tailwind from "/public/tailwind.svg";
 import AOS from "aos";
+import { useEffect } from "react";
 
 const Skills = () => {
-  AOS.init({
-    duration: "1000",
-    easing: "ease-in-out",
-  });
+  useEffect(() => {
+    AOS.init({
+      duration: "1000",
+      easing: "ease-in-out",
+    });
+  }, []);
 
   return (
     <>
