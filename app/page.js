@@ -69,14 +69,14 @@ const Page = () => {
       </div>
       {/* portfolio section end */}
 
-      {/* feedback start */}
+      {/* feedback */}
       <div
         className="flex w-full flex-col items-center justify-center bg-fourth
       lg:rounded-tr-[50%]"
       >
         <Form />
       </div>
-      {/* feedback end */}
+      {/* feedback */}
     </div>
   );
 };
