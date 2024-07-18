@@ -4,7 +4,7 @@ import Css from "/public/css.svg";
 import Javascript from "/public/javascript.svg";
 import React_ from "/public/react.svg";
 import Laravel from "/public/laravel.svg";
-import Tailwind from "/public/Tailwind.svg";
+import Tailwind from "/public/tailwind.svg";
 import AOS from "aos";
 
 const Skills = () => {
