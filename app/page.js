@@ -65,7 +65,10 @@ const Page = () => {
       {/* portfolio section end */}
 
       {/* feedback start */}
-      <div className="radius-form flex w-full flex-col items-center justify-center bg-fourth">
+      <div
+        className="flex w-full flex-col items-center justify-center bg-fourth
+      lg:rounded-tr-[50%]"
+      >
         <Form />
       </div>
       {/* feedback end */}

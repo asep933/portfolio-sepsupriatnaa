@@ -30,7 +30,7 @@ const Form = () => {
     <div className="w-full items-center justify-center">
       <div
         className="flex min-w-full flex-col items-center justify-center py-28
-      dark:bg-slate-900 dark:text-black lg:pb-48 lg:pt-48"
+      dark:bg-slate-900 dark:text-black lg:py-32"
       >
         <h1 className="mb-8 text-2xl font-bold text-primary dark:text-white">
           Contact Me

@@ -16,7 +16,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="m-0 resize-none overflow-x-hidden scroll-smooth">
+    <html
+      lang="en"
+      className="m-0 resize-none overflow-x-hidden scroll-smooth
+    selection:bg-secondary"
+    >
       <head>
         <link
           rel="icon"

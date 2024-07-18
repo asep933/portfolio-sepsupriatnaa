@@ -34,6 +34,7 @@ const PortfolioDashboard = () => {
             alt={"batik ss"}
             title={"Batik Nasional"}
             link={"https://batik-sandy.vercel.app/"}
+            pathGithub={"https://github.com/asep933/batik.git"}
           />
 
           <Portfolio
@@ -41,6 +42,7 @@ const PortfolioDashboard = () => {
             alt={"memor ease ss"}
             title={"Memor Ease"}
             link={"https://memor-ease.vercel.app/"}
+            pathGithub={"https://github.com/asep933/memor-ease.git"}
           />
 
           <Portfolio
@@ -48,6 +50,7 @@ const PortfolioDashboard = () => {
             alt={"movie ss"}
             title={"Movie"}
             link={"https://movie-flash.vercel.app/"}
+            pathGithub={"https://github.com/asep933/MovieFlash.git"}
           />
 
           <Portfolio
@@ -55,6 +58,7 @@ const PortfolioDashboard = () => {
             alt={"anime ss"}
             title={"Anime Top"}
             link={"https://anime-top-theta.vercel.app/"}
+            pathGithub={"https://github.com/asep933/AnimeTop.git"}
           />
         </div>
       </div>

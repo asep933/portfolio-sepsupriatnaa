@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const GitHub = () => {
   return (
-    <div title="GittHub" className="">
+    <div title="GittHub">
       <Link href="https://github.com/asep933" target="_blank">
         <svg
           xmlns="http://www.w3.org/2000/svg"

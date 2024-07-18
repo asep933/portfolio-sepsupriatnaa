@@ -30,8 +30,8 @@ const Info = () => {
 
       <Link
         href="#pageDua"
-        className="fade-in lg:text-md rounded-md bg-fourth p-1 py-0 text-primary shadow-sm transition duration-300 ease-in-out hover:bg-third
-            dark:bg-slate-600 dark:text-white dark:hover:opacity-80 lg:w-44 lg:text-center"
+        className="fade-in lg:text-md rounded-sm bg-fourth p-1 py-0 text-primary shadow-sm transition duration-300 ease-in-out hover:bg-third dark:bg-slate-600
+            dark:text-white dark:hover:opacity-80 lg:w-44 lg:rounded-md lg:text-center"
       >
         Learn More
       </Link>
