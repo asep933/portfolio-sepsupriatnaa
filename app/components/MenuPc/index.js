@@ -8,7 +8,7 @@ const MenuPc = ({ handleClose }) => {
         <Link
           onClick={handleClose}
           id="linkMenu"
-          className="hover:text-third dark:hover:text-slate-50"
+          className="hover:text-primary dark:hover:text-slate-50"
           href={"/"}
         >
           Home
@@ -16,7 +16,7 @@ const MenuPc = ({ handleClose }) => {
         <Link
           onClick={handleClose}
           id="linkMenu"
-          className="hover:text-third dark:hover:text-slate-50"
+          className="hover:text-primary dark:hover:text-slate-50"
           href={"/about"}
         >
           About
@@ -24,7 +24,7 @@ const MenuPc = ({ handleClose }) => {
         <Link
           onClick={handleClose}
           id="linkMenu"
-          className="hover:text-third dark:hover:text-slate-50"
+          className="hover:text-primary dark:hover:text-slate-50"
           href={"/portfolio"}
         >
           Portfolio
@@ -32,7 +32,7 @@ const MenuPc = ({ handleClose }) => {
         <Link
           onClick={handleClose}
           id="linkMenu"
-          className=" hover:text-third dark:hover:text-slate-50"
+          className=" hover:text-primary dark:hover:text-slate-50"
           href={"/blog"}
         >
           Blog

@@ -15,11 +15,6 @@
   border-radius: 0 0 0 50%;
 }
 
-.radius-form {
-  border-radius: 0 50% 0 0;
-
-}
-
 @keyframes fadeInUp {
   0% {
     opacity: 0;

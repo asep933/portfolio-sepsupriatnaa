@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 import PortfolioDashboard from "./components/PorfolioDashboard";
 import Hero from "./components/Hero";
 import Service from "./components/ServiceComponents";
+import Skills from "./components/Skills";
 
 const Page = () => {
   const [web, setWeb] = useState(false);
@@ -52,6 +53,10 @@ const Page = () => {
         setBackBlur={setBackBlur}
       />
       {/* service section end */}
+
+      {/* Skills */}
+      <Skills />
+      {/* Skills */}
 
       {/* portfolio section start*/}
       <div

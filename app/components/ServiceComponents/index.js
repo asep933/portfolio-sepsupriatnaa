@@ -37,7 +37,9 @@ const Service = ({
             data-aos="zoom-in-up"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
-            className="mt-3 flex w-full justify-center bg-white shadow-md transition duration-300 ease-in-out hover:bg-third lg:transform lg:rounded-full lg:p-20 lg:hover:rotate-2"
+            className="mt-3 flex w-full justify-center bg-white shadow-md transition 
+            duration-300 ease-in-out hover:bg-third dark:hover:bg-slate-300 lg:transform 
+            lg:rounded-full lg:p-20 lg:hover:rotate-2"
           >
             <FigmaLogo size={32} />
           </button>
@@ -46,7 +48,9 @@ const Service = ({
             data-aos="zoom-in-up"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
-            className="mt-3 flex w-full justify-center bg-white shadow-md transition duration-300 ease-in-out hover:bg-third lg:transform lg:rounded-full lg:p-20 lg:hover:rotate-2"
+            className="mt-3 flex w-full justify-center bg-white shadow-md transition 
+            duration-300 ease-in-out hover:bg-third dark:hover:bg-slate-300 lg:transform 
+            lg:rounded-full lg:p-20 lg:hover:rotate-2"
             onClick={() => {
               setPrompt(!prompt);
               setBackBlur(!backBlur);
@@ -59,7 +63,9 @@ const Service = ({
             data-aos="zoom-in-up"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
-            className="mt-3 flex w-full justify-center bg-white shadow-md transition duration-300 ease-in-out hover:bg-third lg:transform lg:rounded-full lg:p-20 lg:hover:rotate-2"
+            className="mt-3 flex w-full justify-center bg-white shadow-md transition 
+            duration-300 ease-in-out hover:bg-third dark:hover:bg-slate-300 lg:transform 
+            lg:rounded-full lg:p-20 lg:hover:rotate-2"
             onClick={() => {
               setUiux(!uiux);
               setBackBlur(!backBlur);

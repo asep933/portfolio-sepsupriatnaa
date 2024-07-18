@@ -17,17 +17,6 @@ const bebas_neue = Bebas_Neue({
 const Navbar = () => {
   const [addHumberger, setAddHumberger] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
-  const [scrollTop, setScrollTop] = useState(null);
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     return setScrollTop(document.documentElement.scrollTop);
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   return () => window.removeEventListener("scroll", handleScroll);
-  // }, [scrollTop]);
 
   const handleAnimate = () => {
     setAddHumberger(!addHumberger);

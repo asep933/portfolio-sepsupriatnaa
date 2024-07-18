@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       className="m-0 resize-none overflow-x-hidden scroll-smooth
-    selection:bg-secondary"
+    selection:bg-secondary selection:text-black"
     >
       <head>
         <link
