@@ -4,7 +4,7 @@ import Form from "./components/form";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useState, useEffect } from "react";
-import PortfolioDashboard from "./components/PorfolioDashboard";
+import PortfolioDashboard from "@/app/components/PorfolioDashboard";
 import Hero from "./components/Hero";
 import Service from "./components/ServiceComponents";
 import Skills from "./components/Skills";

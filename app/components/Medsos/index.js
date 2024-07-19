@@ -1,14 +1,15 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-const Medsos = ({ pathGithub, imageOne, imageTwo, alt }) => {
+const Medsos = ({ pathGithub, imageOne, imageTwo, alt, ...props }) => {
   const [isMouseOver, setIsMouseOver] = useState(false);
 
   return (
     <Link
+      {...props}
       href={`${pathGithub}`}
       target="_blank"
       onMouseOver={() => setIsMouseOver(true)}

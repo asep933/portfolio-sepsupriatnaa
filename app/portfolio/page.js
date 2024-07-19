@@ -5,6 +5,8 @@ import ssShopStar from "/public/ss-shop-star.png";
 import ssMovie from "/public/ss-movie.png";
 import ssBatik from "/public/batik-1.PNG";
 import ssMemor from "/public/memor-ease.png";
+import ssReelInsight from "/public/reelinsight-1.png";
+import ssCat from "/public/cat-1.png";
 
 const page = () => {
   return (
@@ -40,6 +42,20 @@ const page = () => {
           title={"Anime Top"}
           link={"https://anime-top-theta.vercel.app/"}
           pathGithub={"https://github.com/asep933/AnimeTop.git"}
+        />
+        <Portfolio
+          image={ssReelInsight}
+          alt={"reelinsight ss"}
+          title={"ReelInsight"}
+          link={"https://github.com/asep933/reelinsight.git"}
+          pathGithub={"https://github.com/asep933/reelinsight.git"}
+        />
+        <Portfolio 
+          image={ssCat}
+          alt={"image cat"}
+          title={"Cats"}
+          link={"https://github.com/asep933/cats.git"}
+          pathGithub={"https://github.com/asep933/cats.git"}
         />
         <Portfolio
           image={ssCalculator}

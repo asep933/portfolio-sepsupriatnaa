@@ -23,7 +23,7 @@ const Info = () => {
 
       <p className="fade-in">
         I am Asep Supriatna, a programmer with 2 years <br /> experience, My
-        expertise includes HTML, CSS, JS, React and Next.
+        expertise includes HTML, CSS, JS, React, Next and Laravel.
       </p>
 
       <Contact />

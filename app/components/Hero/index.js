@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className="flex h-screen w-full flex-col backdrop-blur-md dark:bg-slate-900 
+      className="flex h-screen w-full flex-col gap-8 backdrop-blur-md dark:bg-slate-900 
       lg:h-screen lg:flex-row lg:items-center lg:gap-0 lg:pb-0"
     >
       <div
@@ -15,7 +15,7 @@ const Hero = () => {
         <Info />
       </div>
 
-      <div className="h-full w-full lg:w-1/2">
+      <div className="h-full w-full px-4 lg:w-1/2 lg:px-0">
         <Photo />
       </div>
     </div>

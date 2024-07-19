@@ -4,8 +4,9 @@ import ssBatik from "/public/batik-1.PNG";
 import ssAnime from "/public/ss-animetop.png";
 import ssMemor from "/public/memor-ease.png";
 import Link from "next/link";
+import ReelInsight from "@/public/reelinsight-1.png";
 
-const PortfolioDashboard = () => {
+const Index = () => {
   return (
     <>
       <div className="relative flex w-full flex-col gap-3 px-5 dark:text-white lg:gap-6">
@@ -50,19 +51,19 @@ const PortfolioDashboard = () => {
           />
 
           <Portfolio
+            image={ReelInsight}
+            alt={"reelinsight ss"}
+            title={"ReelInsight"}
+            link={"https://github.com/asep933/reelinsight.git"}
+            pathGithub={"https://github.com/asep933/reelinsight.git"}
+          />
+
+          <Portfolio
             image={ssMovie}
             alt={"movie ss"}
             title={"Movie"}
             link={"https://movie-flash.vercel.app/"}
             pathGithub={"https://github.com/asep933/MovieFlash.git"}
-          />
-
-          <Portfolio
-            image={ssAnime}
-            alt={"anime ss"}
-            title={"Anime Top"}
-            link={"https://anime-top-theta.vercel.app/"}
-            pathGithub={"https://github.com/asep933/AnimeTop.git"}
           />
         </div>
 
@@ -78,4 +79,4 @@ const PortfolioDashboard = () => {
   );
 };
 
-export default PortfolioDashboard;
+export default Index;
