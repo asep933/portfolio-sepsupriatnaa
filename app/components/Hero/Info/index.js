@@ -8,7 +8,7 @@ const Info = () => {
       className="block text-base dark:text-white
          lg:flex lg:flex-col lg:justify-center lg:text-lg"
     >
-      <p className="fade-in">Hello👋...</p>
+      <p className="fade-in">Hello,</p>
 
       <h1 className="fade-in text-2xl font-bold lg:text-4xl">
         Frontend{" "}

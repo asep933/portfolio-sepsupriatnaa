@@ -14,7 +14,7 @@ const Service = ({
   return (
     <div
       id="pageDua"
-      className="relative flex w-full flex-wrap items-center py-16 dark:bg-slate-600
+      className="relative flex w-full flex-wrap items-center py-16 dark:bg-slate-900
         lg:px-32 lg:py-28"
     >
       <div className="fade-in w-full space-y-3 px-5 text-black dark:text-white lg:text-2xl">
@@ -38,7 +38,7 @@ const Service = ({
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
             className="mt-3 flex w-full justify-center bg-white shadow-md transition 
-            duration-300 ease-in-out hover:bg-third dark:hover:bg-slate-300 lg:transform 
+            duration-300 ease-in-out hover:bg-slate-50 dark:hover:bg-slate-300 lg:transform 
             lg:rounded-full lg:p-20 lg:hover:rotate-2"
           >
             <FigmaLogo size={32} />
@@ -49,7 +49,7 @@ const Service = ({
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
             className="mt-3 flex w-full justify-center bg-white shadow-md transition 
-            duration-300 ease-in-out hover:bg-third dark:hover:bg-slate-300 lg:transform 
+            duration-300 ease-in-out hover:bg-slate-50 dark:hover:bg-slate-300 lg:transform 
             lg:rounded-full lg:p-20 lg:hover:rotate-2"
             onClick={() => {
               setPrompt(!prompt);
@@ -64,7 +64,7 @@ const Service = ({
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
             className="mt-3 flex w-full justify-center bg-white shadow-md transition 
-            duration-300 ease-in-out hover:bg-third dark:hover:bg-slate-300 lg:transform 
+            duration-300 ease-in-out hover:bg-slate-50 dark:hover:bg-slate-300 lg:transform 
             lg:rounded-full lg:p-20 lg:hover:rotate-2"
             onClick={() => {
               setUiux(!uiux);

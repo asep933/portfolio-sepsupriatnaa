@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 const Form = () => {
-  const [isSubmit, setIsSubmit] = useState("no submit");
+  const [isSubmit, setIsSubmit] = useState("no-submit");
   const [input, setInput] = useState({
     name: "",
     email: "",
@@ -12,7 +12,7 @@ const Form = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      setIsSubmit("no submit");
+      setIsSubmit("no-submit");
     }, 3000);
   }, [isSubmit]);
 
@@ -20,9 +20,9 @@ const Form = () => {
     e.preventDefault();
     setIsSubmit("submit");
     setInput({
-      name: "",
-      email: "",
-      text: "",
+      name: null,
+      email: null,
+      text: null,
     });
   };
 
@@ -44,6 +44,7 @@ const Form = () => {
             Name
           </label>
           <input
+            required
             onChange={(e) => setInput({ name: e.target.value })}
             value={input.name}
             name="nama"
@@ -55,6 +56,8 @@ const Form = () => {
             Email
           </label>
           <input
+            required
+            type="email"
             onChange={(e) => setInput({ email: e.target.value })}
             value={input.email}
             name="email"
@@ -66,6 +69,7 @@ const Form = () => {
             Message
           </label>
           <textarea
+            required
             onChange={(e) => setInput({ text: e.target.value })}
             value={input.text}
             placeholder="Message..."

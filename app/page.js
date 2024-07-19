@@ -33,7 +33,8 @@ const Page = () => {
             setUiux(false);
           }}
           id="blur"
-          className="fixed z-10 h-screen w-full bg-transparent bg-opacity-20 backdrop-blur-sm"
+          className="fixed z-50 h-screen w-full cursor-pointer bg-black
+          bg-opacity-40 blur-md backdrop-filter"
         ></div>
       )}
 

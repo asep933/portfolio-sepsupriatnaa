@@ -1,6 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
-import blogOne from "/public/blog/blog-one.jpg";
 
 const Blog = () => {
   return (
@@ -8,12 +6,9 @@ const Blog = () => {
       <ul className="space-y-3 text-xl font-medium text-blue-700 dark:text-blue-400 lg:space-y-5">
         <li>
           <Link
-            data-aos="zoom-in-up"
             className="block h-40 w-full space-y-3 overflow-hidden rounded-sm bg-secondary px-4 py-2 shadow-sm outline-offset-1 dark:bg-slate-600 lg:px-48"
             href="/blog/blog-one"
           >
-            {/* <Image src={blogOne} alt="blog image" width={300} /> */}
-
             <h1 className="hover:underline hover:opacity-80">
               Mengeksplorasi Keuntungan Penggunaan Kecerdasan Buatan (AI) di Era
               Modern
@@ -30,7 +25,6 @@ const Blog = () => {
         </li>
         <li>
           <Link
-            data-aos="zoom-in-up"
             className="block h-40 w-full space-y-3 overflow-hidden rounded-sm bg-secondary px-4 py-2 shadow-sm outline-offset-1 dark:bg-slate-600 lg:px-48"
             href={"/blog/blog-two"}
           >

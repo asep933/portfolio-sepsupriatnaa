@@ -3,7 +3,7 @@ import Paragraph from "../components/paragraph/page";
 
 const BlogOne = () => {
   return (
-    <div className="h-auto px-5 pb-16 pt-8 lg:px-32">
+    <div className="h-auto px-5 pb-16 pt-16 lg:px-32">
       <div>
         <TitleBlog
           title={

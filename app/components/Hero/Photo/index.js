@@ -3,8 +3,9 @@ const Photo = () => {
     <>
       <div className="h-full w-full">
         <div
-          className="bg-no-repea h-full w-full bg-[url('/ppSaya.jpg')]
-        bg-cover bg-top brightness-90 saturate-150 radius"
+          className="h-full w-full rounded-t-[50%] rounded-bl-none bg-[url('/my_pp.jpg')] 
+          bg-cover bg-bottom bg-no-repeat brightness-90 saturate-150 lg:rounded-t-none
+          lg:rounded-bl-[50%]"
         />
       </div>
     </>

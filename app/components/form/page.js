@@ -85,6 +85,7 @@ const Form = () => {
           )}
 
           <button
+            disabled={true}
             data-aos="zoom-in-up"
             type="submit"
             className="mt-8 w-full rounded-lg bg-third p-2 shadow-sm hover:opacity-80 dark:bg-slate-600 dark:text-white"

@@ -2,9 +2,12 @@ import Image from "next/image";
 
 const Icon = ({ path, alt, width, className }) => {
   return (
-    <div>
-      <Image src={path} alt={alt} width={width} className={`${className}`} />
-    </div>
+    <Image
+      src={path}
+      alt={alt}
+      width={width}
+      className={`${className} transition duration-300 ease-in-out hover:scale-110`}
+    />
   );
 };
 
