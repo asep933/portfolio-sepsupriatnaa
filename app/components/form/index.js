@@ -18,16 +18,25 @@ const Form = () => {
 
   const handleClick = (e) => {
     e.preventDefault();
+
+    const subject = encodeURIComponent("Contact Form Submission");
+    const body = encodeURIComponent(
+      `Name: ${input.name}\nEmail: ${input.email}\nMessage: ${input.text}`,
+    );
+    const mailtoLink = `mailto:asep93339@gmail.com?subject=${subject}&body=${body}`;
+
+    window.location.href = mailtoLink;
+
     setIsSubmit("submit");
     setInput({
-      name: null,
-      email: null,
-      text: null,
+      name: "",
+      email: "",
+      text: "",
     });
   };
 
   return (
-    <div className="w-full items-center justify-center">
+    <div className="mx-auto w-full max-w-screen-xl items-center justify-center">
       <div
         className="flex min-w-full flex-col items-center justify-center py-28
       dark:bg-slate-900 dark:text-black lg:py-32"

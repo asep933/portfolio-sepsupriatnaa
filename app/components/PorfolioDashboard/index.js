@@ -1,7 +1,6 @@
 import Portfolio from "../PortfolioList";
 import ssMovie from "/public/ss-movie.png";
 import ssBatik from "/public/batik-1.PNG";
-import ssAnime from "/public/ss-animetop.png";
 import ssMemor from "/public/memor-ease.png";
 import Link from "next/link";
 import ReelInsight from "@/public/reelinsight-1.png";
@@ -9,7 +8,7 @@ import ReelInsight from "@/public/reelinsight-1.png";
 const Index = () => {
   return (
     <>
-      <div className="relative flex w-full flex-col gap-3 px-5 dark:text-white lg:gap-6">
+      <div className="relative mx-auto flex w-full max-w-screen-xl flex-col gap-3 px-5 dark:text-white lg:gap-6">
         <div>
           <h1
             data-aos="zoom-in-up"

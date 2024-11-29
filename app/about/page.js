@@ -10,7 +10,7 @@ const About = () => {
     With technical expertise and practical experience, Asep Supriatna is ready to carry out web development projects with a focus on quality and efficient solutions. Feel free to reach out via email for further discussions or potential projects.`;
 
   return (
-    <div className="flex h-screen w-full items-center space-y-10 px-5">
+    <div className="mx-auto flex h-screen w-full max-w-screen-xl items-center space-y-10 px-5">
       <div className="fade-in flex flex-wrap items-center dark:text-white lg:flex lg:flex-nowrap">
         <h1
           data-aos="zoom-in-up"

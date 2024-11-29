@@ -6,6 +6,7 @@ import linkGithub from "/public/github-image.svg";
 import linkGithubWhite from "/public/github-image-white.svg";
 import Medsos from "../Medsos";
 import { ReadCvLogo } from "@phosphor-icons/react";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
@@ -24,7 +25,9 @@ const Contact = () => {
         imageTwo={linkGithubWhite}
         alt={"image github"}
       />
-      <a
+      <motion.a
+        whileTap={{ scale: 1.1 }}
+        whileHover={{ rotate: -20 }}
         title="cv"
         href="/Asep-Supriatna-CV.pdf"
         target="_blank"
@@ -32,7 +35,7 @@ const Contact = () => {
         download
       >
         <ReadCvLogo size={28} />
-      </a>
+      </motion.a>
     </div>
   );
 };

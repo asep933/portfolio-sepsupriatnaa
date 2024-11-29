@@ -6,7 +6,7 @@ const Blog = () => {
       <ul className="space-y-3 text-xl font-medium text-blue-700 dark:text-blue-400 lg:space-y-5">
         <li>
           <Link
-            className="block h-40 w-full space-y-3 overflow-hidden rounded-sm bg-secondary px-4 py-2 shadow-sm outline-offset-1 dark:bg-slate-600 lg:px-48"
+            className="mx-auto block h-40 w-full max-w-screen-xl space-y-3 overflow-hidden rounded-sm bg-secondary px-4 py-2 shadow-sm outline-offset-1 dark:bg-slate-600 lg:px-48"
             href="/blog/blog-one"
           >
             <h1 className="hover:underline hover:opacity-80">
@@ -25,7 +25,7 @@ const Blog = () => {
         </li>
         <li>
           <Link
-            className="block h-40 w-full space-y-3 overflow-hidden rounded-sm bg-secondary px-4 py-2 shadow-sm outline-offset-1 dark:bg-slate-600 lg:px-48"
+            className="mx-auto block h-40 w-full max-w-screen-xl space-y-3 overflow-hidden rounded-sm bg-secondary px-4 py-2 shadow-sm outline-offset-1 dark:bg-slate-600 lg:px-48"
             href={"/blog/blog-two"}
           >
             <h1 className="hover:underline hover:opacity-80">

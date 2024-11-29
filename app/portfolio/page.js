@@ -11,8 +11,8 @@ import ssCat from "/public/cat-1.png";
 const page = () => {
   return (
     <div
-      className="flex h-auto w-full flex-col gap-8 px-5 pb-16 pt-32 text-lg lg:h-auto lg:px-0 
-    lg:pb-36 lg:pt-20"
+      className="mx-auto flex h-auto w-full max-w-screen-xl flex-col gap-8 px-5 pb-16 pt-32 text-lg 
+    lg:h-auto lg:px-0 lg:pb-36 lg:pt-20"
     >
       <h1
         data-aos="zoom-in-up"
@@ -50,7 +50,7 @@ const page = () => {
           link={"https://github.com/asep933/reelinsight.git"}
           pathGithub={"https://github.com/asep933/reelinsight.git"}
         />
-        <Portfolio 
+        <Portfolio
           image={ssCat}
           alt={"image cat"}
           title={"Cats"}

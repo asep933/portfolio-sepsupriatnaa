@@ -23,7 +23,7 @@ const Page = () => {
   }, []);
 
   return (
-    <div>
+    <>
       {backBlur && (
         <div
           onClick={() => {
@@ -73,12 +73,12 @@ const Page = () => {
       {/* feedback */}
       <div
         className="flex w-full flex-col items-center justify-center bg-fourth
-      lg:rounded-tr-[50%]"
+      lg:rounded-tr-[50%] dark:bg-transparent"
       >
         <Form />
       </div>
       {/* feedback */}
-    </div>
+    </>
   );
 };
 

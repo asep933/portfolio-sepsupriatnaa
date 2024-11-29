@@ -56,7 +56,7 @@ const Navbar = () => {
         className={`bg-nav shadow-nav fixed z-50 w-full text-primary backdrop-blur-md dark:bg-slate-200 
         dark:bg-opacity-75`}
       >
-        <div className="flex w-full items-center justify-around">
+        <div className="mx-auto flex w-full max-w-screen-xl items-center justify-around">
           <div className="flex items-center gap-3 max-[820px]:gap-1">
             {/* button music start*/}
             <ButtonMusic />

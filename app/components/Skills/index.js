@@ -21,28 +21,30 @@ const Skills = () => {
   return (
     <>
       <div
-        className="flex h-screen w-full flex-col-reverse items-center justify-center gap-6 bg-fourth px-4 
-        py-16 capitalize text-primary dark:bg-slate-900 dark:text-slate-50 lg:flex-row lg:rounded-br-full
+        className="flex h-screen w-full items-center justify-center gap-6 bg-fourth px-4 
+        py-16 capitalize text-primary dark:bg-slate-900 dark:text-slate-50 lg:rounded-br-full
         lg:rounded-tr-full lg:px-32"
       >
-        <div
-          data-aos="fade-right"
-          className="flex items-center justify-center gap-8 rounded-md bg-primary p-16 dark:bg-slate-200
+        <div className="mx-auto flex w-full max-w-screen-2xl flex-col-reverse items-center justify-center gap-8 lg:flex-row">
+          <div
+            data-aos="fade-right"
+            className="flex items-center justify-center gap-8 rounded-md bg-primary p-16 dark:bg-slate-200
         lg:w-1/2 lg:rounded-full"
-        >
-          <div className="grid w-full grid-cols-2 gap-6 lg:grid-cols-3">
-            <Icon path={Html} alt={"icon html"} width={90} />
-            <Icon path={Css} alt={"icon Css"} width={90} />
-            <Icon path={Javascript} alt={"icon javascript"} width={90} />
-            <Icon path={React_} alt={"icon react"} width={90} />
-            <Icon path={Laravel} alt={"icon laravel"} width={90} />
-            <Icon path={Tailwind} alt={"icon tailwind"} width={90} />
+          >
+            <div className="grid w-full grid-cols-2 gap-6 lg:grid-cols-3">
+              <Icon path={Html} alt={"icon html"} width={90} />
+              <Icon path={Css} alt={"icon Css"} width={90} />
+              <Icon path={Javascript} alt={"icon javascript"} width={90} />
+              <Icon path={React_} alt={"icon react"} width={90} />
+              <Icon path={Laravel} alt={"icon laravel"} width={90} />
+              <Icon path={Tailwind} alt={"icon tailwind"} width={90} />
+            </div>
           </div>
-        </div>
 
-        <h1 data-aos="fade-left" className="text-2xl font-bold lg:text-5xl">
-          my skills
-        </h1>
+          <h1 data-aos="fade-left" className="text-2xl font-bold lg:text-5xl">
+            my skills
+          </h1>
+        </div>
       </div>
     </>
   );

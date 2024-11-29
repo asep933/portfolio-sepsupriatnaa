@@ -1,10 +1,8 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
 import backToTop from "/public/back-top.svg";
 import { useState, useEffect } from "react";
-import { WhatsappLogo } from "@phosphor-icons/react";
 
 const Back = () => {
   const [show, setShow] = useState(false);
@@ -23,15 +21,15 @@ const Back = () => {
   }, []);
   return (
     <div>
-      <Link
-        href="#home"
+      <button
+        onClick={() => window.scrollTo({ top: 0 })}
         className={`${
           show ? "block" : "hidden"
         } fixed bottom-32 right-4 z-[99] rotate-90 rounded-full shadow-sm
         transition duration-300 ease-in-out hover:scale-110 lg:right-8`}
       >
         <Image src={backToTop} alt="back to top image" width={40} />
-      </Link>
+      </button>
     </div>
   );
 };

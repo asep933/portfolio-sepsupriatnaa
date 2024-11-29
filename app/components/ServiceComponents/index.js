@@ -1,5 +1,6 @@
 import Description from "../description/page";
 import { FigmaLogo, Gear, Stack } from "@phosphor-icons/react";
+import { motion } from "framer-motion";
 
 const Service = ({
   web,
@@ -17,62 +18,68 @@ const Service = ({
       className="relative flex w-full flex-wrap items-center py-16 dark:bg-slate-900
         lg:px-32 lg:py-28"
     >
-      <div className="fade-in w-full space-y-3 px-5 text-black dark:text-white lg:text-2xl">
+      <div className="fade-in mx-auto w-full max-w-screen-xl space-y-3 px-5 text-black dark:text-white lg:text-2xl">
         <h1
           data-aos="fade-right"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           className="mx-auto mb-8 text-2xl font-bold lg:text-4xl"
         >
-          What is role of web development?
+          What is role of web development ?
         </h1>
 
         <div className="flex flex-col py-16 text-center text-xl text-black lg:grid lg:grid-flow-row lg:gap-12 xl:grid-cols-3">
-          <button
-            title="Frontend"
-            onClick={() => {
-              setWeb(!web);
-              setBackBlur(!backBlur);
-            }}
-            data-aos="zoom-in-up"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            className="mt-3 flex w-full justify-center bg-white shadow-md transition 
+          <motion.div whileTap={{ scale: 1.1 }}>
+            <button
+              title="Frontend"
+              onClick={() => {
+                setWeb(!web);
+                setBackBlur(!backBlur);
+              }}
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              className="mt-3 flex w-full justify-center bg-white shadow-md transition 
             duration-300 ease-in-out hover:bg-slate-50 dark:hover:bg-slate-300 lg:transform 
             lg:rounded-full lg:p-20 lg:hover:rotate-2"
-          >
-            <FigmaLogo size={32} />
-          </button>
-          <button
-            title="Backend"
-            data-aos="zoom-in-up"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            className="mt-3 flex w-full justify-center bg-white shadow-md transition 
+            >
+              <FigmaLogo size={32} />
+            </button>
+          </motion.div>
+          <motion.div whileTap={{ scale: 1.1 }}>
+            <button
+              title="Backend"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              className="mt-3 flex w-full justify-center bg-white shadow-md transition 
             duration-300 ease-in-out hover:bg-slate-50 dark:hover:bg-slate-300 lg:transform 
             lg:rounded-full lg:p-20 lg:hover:rotate-2"
-            onClick={() => {
-              setPrompt(!prompt);
-              setBackBlur(!backBlur);
-            }}
-          >
-            <Gear size={32} />
-          </button>
-          <button
-            title="Fullstack"
-            data-aos="zoom-in-up"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            className="mt-3 flex w-full justify-center bg-white shadow-md transition 
+              onClick={() => {
+                setPrompt(!prompt);
+                setBackBlur(!backBlur);
+              }}
+            >
+              <Gear size={32} />
+            </button>
+          </motion.div>
+          <motion.div whileTap={{ scale: 1.1 }}>
+            <button
+              title="Fullstack"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              className="mt-3 flex w-full justify-center bg-white shadow-md transition 
             duration-300 ease-in-out hover:bg-slate-50 dark:hover:bg-slate-300 lg:transform 
             lg:rounded-full lg:p-20 lg:hover:rotate-2"
-            onClick={() => {
-              setUiux(!uiux);
-              setBackBlur(!backBlur);
-            }}
-          >
-            <Stack size={32} />
-          </button>
+              onClick={() => {
+                setUiux(!uiux);
+                setBackBlur(!backBlur);
+              }}
+            >
+              <Stack size={32} />
+            </button>
+          </motion.div>
         </div>
       </div>
       {web && (
